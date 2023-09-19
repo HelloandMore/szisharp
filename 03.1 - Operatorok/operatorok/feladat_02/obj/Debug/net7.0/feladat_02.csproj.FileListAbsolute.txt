@@ -1,0 +1,14 @@
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\bin\Debug\net7.0\feladat_02.exe
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\bin\Debug\net7.0\feladat_02.deps.json
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\bin\Debug\net7.0\feladat_02.runtimeconfig.json
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\bin\Debug\net7.0\feladat_02.dll
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\bin\Debug\net7.0\feladat_02.pdb
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\feladat_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\feladat_02.AssemblyInfoInputs.cache
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\feladat_02.AssemblyInfo.cs
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\feladat_02.csproj.CoreCompileInputs.cache
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\feladat_02.dll
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\refint\feladat_02.dll
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\feladat_02.pdb
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\feladat_02.genruntimeconfig.cache
+C:\Users\b1konmil\Desktop\03.1 - Operatorok\operatorok\feladat_02\obj\Debug\net7.0\ref\feladat_02.dll
