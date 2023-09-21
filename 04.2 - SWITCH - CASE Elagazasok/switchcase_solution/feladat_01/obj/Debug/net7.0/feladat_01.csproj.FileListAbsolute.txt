@@ -1,0 +1,14 @@
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\bin\Debug\net7.0\feladat_01.exe
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\bin\Debug\net7.0\feladat_01.deps.json
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\bin\Debug\net7.0\feladat_01.runtimeconfig.json
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\bin\Debug\net7.0\feladat_01.dll
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\bin\Debug\net7.0\feladat_01.pdb
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\feladat_01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\feladat_01.AssemblyInfoInputs.cache
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\feladat_01.AssemblyInfo.cs
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\feladat_01.csproj.CoreCompileInputs.cache
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\feladat_01.dll
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\refint\feladat_01.dll
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\feladat_01.pdb
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\feladat_01.genruntimeconfig.cache
+C:\Users\b1konmil\Desktop\04.2 - SWITCH - CASE Elagazasok\switchcase_solution\feladat_01\obj\Debug\net7.0\ref\feladat_01.dll
