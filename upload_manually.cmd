@@ -1,4 +1,5 @@
 @echo off
+pushd %~0\..
 set /p comment="Add meg a commentet > "
 
 git add .
