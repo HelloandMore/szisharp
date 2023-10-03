@@ -1,0 +1,14 @@
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\Feladat_04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\Feladat_04.AssemblyInfoInputs.cache
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\Feladat_04.AssemblyInfo.cs
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\Feladat_04.csproj.CoreCompileInputs.cache
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\bin\Debug\net7.0\Feladat_04.exe
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\bin\Debug\net7.0\Feladat_04.deps.json
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\bin\Debug\net7.0\Feladat_04.runtimeconfig.json
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\bin\Debug\net7.0\Feladat_04.dll
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\bin\Debug\net7.0\Feladat_04.pdb
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\Feladat_04.dll
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\refint\Feladat_04.dll
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\Feladat_04.pdb
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\Feladat_04.genruntimeconfig.cache
+C:\Users\b1konmil\Desktop\05.2 - Do-While, While ciklusok\Solution_dowhile\Feladat_04\obj\Debug\net7.0\ref\Feladat_04.dll
