@@ -1,0 +1,14 @@
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\bin\Debug\net7.0\feladat_04.1.exe
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\bin\Debug\net7.0\feladat_04.1.deps.json
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\bin\Debug\net7.0\feladat_04.1.runtimeconfig.json
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\bin\Debug\net7.0\feladat_04.1.dll
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\bin\Debug\net7.0\feladat_04.1.pdb
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\feladat_04.1.GeneratedMSBuildEditorConfig.editorconfig
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\feladat_04.1.AssemblyInfoInputs.cache
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\feladat_04.1.AssemblyInfo.cs
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\feladat_04.1.csproj.CoreCompileInputs.cache
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\feladat_04.1.dll
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\refint\feladat_04.1.dll
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\feladat_04.1.pdb
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\feladat_04.1.genruntimeconfig.cache
+J:\.C#\.fork\szisharp\05.2 - Do-While, While ciklusok\Solution_dowhile\feladat_04.1\obj\Debug\net7.0\ref\feladat_04.1.dll
