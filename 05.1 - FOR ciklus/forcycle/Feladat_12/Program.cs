@@ -1,8 +1,7 @@
 ﻿bool isNum = false;
 int startNum;
 int endNum;
-int sumOfAll = 0;
-int multiplication = 1;
+int devisibleWithThree = 0;
 
 do
 {
@@ -22,26 +21,21 @@ if (startNum < endNum)
 {
 	for (int i = startNum; i <= endNum; i++)
 	{
-		sumOfAll += i;
-		Console.WriteLine(i);
+		if (i%3 == 0)
+		{
+			devisibleWithThree++;
+		}
 	}
-	startNum++;
-	for (int i = startNum; i <= endNum; i+=2)
-	{
-		multiplication *= i;	}
 }
 else if (endNum < startNum)
 {
-	for (int i = startNum; i >= endNum; i-=2)
+	for (int i = startNum; i >= endNum; i--)
 	{
-		sumOfAll += i;
-		Console.WriteLine(i);
-	}
-	for (int i = startNum; i <= endNum; i -= 2)
-	{
-		multiplication *= i;
+		if (i%3 == 0)
+		{
+			devisibleWithThree++;
+		}
 	}
 }
 
-Console.WriteLine($"A számok összege: {sumOfAll}");
-Console.WriteLine($"A számok szorzata: {multiplication}");
+Console.WriteLine($"A két szám intervallumában {devisibleWithThree} szám osztható 3-mal");
