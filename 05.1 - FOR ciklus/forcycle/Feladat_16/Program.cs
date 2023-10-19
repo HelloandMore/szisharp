@@ -1,7 +1,9 @@
 ﻿bool isNum = false;
 int startNum;
 int endNum;
-int numOfDevisibleWithThree = 0;
+int sumOfEvenNum = 0;
+int sumOfOddNum = 0;
+double averageOfAll;
 
 do
 {
@@ -19,27 +21,33 @@ do
 
 if (startNum < endNum)
 {
-	if (startNum%2 == 0)
-		startNum++;
-	for (int i = startNum; i <= endNum; i+=2)
+	for (int i = startNum; i <= endNum; i++)
 	{
-		if (i % 3 == 0)
+		if (i % 2 == 0)
 		{
-			numOfDevisibleWithThree++;
+			sumOfEvenNum += i;
+		}
+		else if (i % 2 != 0)
+		{
+			sumOfOddNum += i;
 		}
 	}
 }
 else if (endNum < startNum)
 {
-	if (endNum % 2 == 0)
-		startNum--;
-	for (int i = startNum; i >= endNum; i-=2)
+	for (int i = startNum; i >= endNum; i--)
 	{
-		if (i % 3 == 0)
+		if (i % 2 == 0)
 		{
-			numOfDevisibleWithThree++;
+			sumOfEvenNum += i;
+		}
+		else if (i % 2 != 0)
+		{
+			sumOfOddNum += i;
 		}
 	}
 }
 
-Console.WriteLine($"A két szám intervallumában {numOfDevisibleWithThree} páratlan szám osztható 3-mal");
+averageOfAll = (sumOfEvenNum + sumOfOddNum) / 2;
+
+Console.WriteLine($"A páros, páratlan számok összegének átlaga: {averageOfAll}");
