@@ -39,7 +39,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_17", "Feladat_17\Fe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_18", "Feladat_18\Feladat_18.csproj", "{EA80954A-293F-4565-8E13-C46EF56F58FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bonusfeladat_01", "bonusfeladat_01\bonusfeladat_01.csproj", "{56302E91-FC28-41A2-97A8-9B6B0FE0CA37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bonusfeladat_01", "bonusfeladat_01\bonusfeladat_01.csproj", "{56302E91-FC28-41A2-97A8-9B6B0FE0CA37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bonusfeladat_02", "bonusfeladat_02\bonusfeladat_02.csproj", "{9DA1CDFF-2FE0-47B5-A53C-F2A271E8BA21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bonusfeladat_03", "bonusfeladat_03\bonusfeladat_03.csproj", "{58C818BE-7F7F-4752-BBE8-08977C140309}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +127,14 @@ Global
 		{56302E91-FC28-41A2-97A8-9B6B0FE0CA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56302E91-FC28-41A2-97A8-9B6B0FE0CA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56302E91-FC28-41A2-97A8-9B6B0FE0CA37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA1CDFF-2FE0-47B5-A53C-F2A271E8BA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA1CDFF-2FE0-47B5-A53C-F2A271E8BA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA1CDFF-2FE0-47B5-A53C-F2A271E8BA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA1CDFF-2FE0-47B5-A53C-F2A271E8BA21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C818BE-7F7F-4752-BBE8-08977C140309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C818BE-7F7F-4752-BBE8-08977C140309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C818BE-7F7F-4752-BBE8-08977C140309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C818BE-7F7F-4752-BBE8-08977C140309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
