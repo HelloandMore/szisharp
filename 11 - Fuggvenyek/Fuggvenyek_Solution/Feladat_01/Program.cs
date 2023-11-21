@@ -1,7 +1,5 @@
 ﻿/* Program, mely megkérdezi a felhasználó nevét és születési évét */
 
-using IOLibrary;
-
 Console.Write("Hogy hívnak??!? > ");
 string name = ExtendedConsole.ReadString();
 

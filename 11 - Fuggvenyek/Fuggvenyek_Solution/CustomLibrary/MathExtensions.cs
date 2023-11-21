@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace System;
+namespace CustomLibrary;
 
-public static partial class Math
+public static partial class MathFunctions
 {
 	public static double CelsiusToKelvin(double celsius) => celsius + 273.15;
-
 	public static double CelsiusToFahrenheit(double celsius) => (9 / 5) * celsius + 32;
+	public static double Pythagoras(double xLenght, double yLenght) => Math.Sqrt(Math.Pow(xLenght, 2) + Math.Pow(yLenght, 2));
 }
