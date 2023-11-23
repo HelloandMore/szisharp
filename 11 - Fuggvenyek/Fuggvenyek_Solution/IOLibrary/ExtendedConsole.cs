@@ -10,7 +10,7 @@ namespace IOLibrary;
 
 public static class ExtendedConsole
 {
-	public static int ReadInteger(string prompt, int max)
+	public static int ReadInteger(string prompt, int max, int min)
 	{
 		bool isNumber = false;
 		int number = 0;
@@ -32,7 +32,18 @@ public static class ExtendedConsole
 				Console.ReadKey();
 				Console.ResetColor();
 
-			} 
+			}
+			else if (number < min)
+			{
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.WriteLine($"A megadott szám nem lehet kisebb mint {min}");
+
+				Console.ForegroundColor = ConsoleColor.Green;
+				Console.WriteLine("A folytatáshoz nyomjon meg bármely gombot");
+				Console.ReadKey();
+				Console.ResetColor();
+
+			}
 			else if (!isNumber)
 			{
 				Console.ForegroundColor = ConsoleColor.Red;

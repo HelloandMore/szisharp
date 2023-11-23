@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_02", "Feladat_02\Fe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomLibrary", "CustomLibrary\CustomLibrary.csproj", "{626E87E7-4C32-4D42-A0F0-666DEF1EFB2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_03", "Feladat_03\Feladat_03.csproj", "{2F8512A5-6DD6-4841-B7BF-5D29142FD692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_03", "Feladat_03\Feladat_03.csproj", "{2F8512A5-6DD6-4841-B7BF-5D29142FD692}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_04", "Feladat_04\Feladat_04.csproj", "{BDB998C0-D178-4993-A1D4-B0CDB7D1AA90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nerdd", "nerdd\nerdd.csproj", "{E31B9CD9-5C99-46D8-AC18-11E3A0ABDACE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{2F8512A5-6DD6-4841-B7BF-5D29142FD692}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F8512A5-6DD6-4841-B7BF-5D29142FD692}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F8512A5-6DD6-4841-B7BF-5D29142FD692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB998C0-D178-4993-A1D4-B0CDB7D1AA90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB998C0-D178-4993-A1D4-B0CDB7D1AA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB998C0-D178-4993-A1D4-B0CDB7D1AA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB998C0-D178-4993-A1D4-B0CDB7D1AA90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31B9CD9-5C99-46D8-AC18-11E3A0ABDACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31B9CD9-5C99-46D8-AC18-11E3A0ABDACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31B9CD9-5C99-46D8-AC18-11E3A0ABDACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31B9CD9-5C99-46D8-AC18-11E3A0ABDACE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
