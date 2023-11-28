@@ -10,35 +10,21 @@ point = ExtendedConsole.ReadDouble("Add meg a dolgozatban elért pontszámod > "
 
 double gradeCalculator(double point)
 {
-	int returningValue;
-
 	double percent = point;
 
-	if (percent < 50)
+	switch (percent)
 	{
-		returningValue = 1;
+		case < 50:
+			return 1;
+		case < 60:
+			return 2;
+		case < 70:
+			return 3;
+		case < 85:
+			return 4;
+		default:
+			return 5;
 	}
-	else if (percent >= 50 && percent < 60)
-	{
-		returningValue = 2;
-	}
-	else if (percent >= 60 && percent < 70)
-	{
-		returningValue = 3;
-	}
-	else if (percent >= 70 && percent < 85)
-	{
-		returningValue = 4;
-	}
-	else if (percent >= 85)
-	{
-		returningValue = 5;
-	}
-	else
-	{
-		returningValue = 0;
-	}
-	return returningValue;
 }
 
 Console.WriteLine($"A dolgozatra kapott jegyed a következő: {gradeCalculator(point)}");
