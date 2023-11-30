@@ -9,4 +9,4 @@ double propertyTax = propertyWidth < 20 && propertyLength < 30 ? CalculateTax(pr
 
 double CalculateTax(double propertyArea) => propertyArea * 1000;
 
-Console.WriteLine($"A teljes adó mértéke: {CalculateTax}");
+Console.WriteLine($"A teljes adó mértéke: {propertyTax} HUF");
