@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom.Library", "Custom.Library\Custom.Library.csproj", "{07C4C63D-2985-4F98-8E1E-996FD78E4C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_01", "Feladat_01\Feladat_01.csproj", "{8B7D3505-3010-40F6-B676-8F7278EC9CFC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07C4C63D-2985-4F98-8E1E-996FD78E4C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C4C63D-2985-4F98-8E1E-996FD78E4C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C4C63D-2985-4F98-8E1E-996FD78E4C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C4C63D-2985-4F98-8E1E-996FD78E4C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7D3505-3010-40F6-B676-8F7278EC9CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7D3505-3010-40F6-B676-8F7278EC9CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7D3505-3010-40F6-B676-8F7278EC9CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7D3505-3010-40F6-B676-8F7278EC9CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
