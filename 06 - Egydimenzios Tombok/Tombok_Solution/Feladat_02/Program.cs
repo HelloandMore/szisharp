@@ -1,6 +1,6 @@
 ﻿using IOLibrary;
 
-const int NUMBER_OF_CARS = 10;
+const int NUMBER_OF_CARS = 2;
 Driver[] drivers = GetDrivers();
 
 int sumOfFuel = drivers.Sum(x => x.Fuel);

@@ -13,7 +13,7 @@
 
 	public override string ToString()
 	{
-		return $"{this.LicenseNumber.ToString().PadLeft(7)} {this.Fuel.ToString().PadLeft(3)} liter üzemanyagot tankolt, {this.Cost.ToString().PadLeft(5)} Ft-ért";
+		return $"{this.LicenseNumber.ToString().PadLeft(7)} - {this.Fuel.ToString().PadLeft(3)} liter üzemanyagot tankolt {this.Cost.ToString().PadLeft(5)} Ft-ért";
 	}
 }
 
