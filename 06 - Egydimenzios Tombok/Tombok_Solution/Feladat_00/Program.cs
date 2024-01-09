@@ -1,6 +1,6 @@
 ﻿using IOLibrary;
 
-const int NUMBER_OF_CARS = 4;
+const int NUMBER_OF_CARS = 10;
 Driver[] drivers = GetDrivers();
 int sumOfFines = drivers.Sum(x => x.Fine);
 Console.WriteLine($"\nA hatóság összesen {sumOfFines} Ft-nyi büntetést szabott ki");
