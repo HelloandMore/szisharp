@@ -18,6 +18,6 @@ public class Fruit
 	}
 	public override string ToString()
 	{
-		return $"Gyümölcs adatok: {this.Name} - Ára: {this.Price} - Tömeg: {this.Weight}";
+		return $"{this.Name} - Ára: {this.Price} - Tömeg: {this.Weight}";
 	} 
 }
