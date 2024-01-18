@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_02", "Feladat_02\Fe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_03", "Feladat_03\Feladat_03.csproj", "{ECC84A68-C123-40F0-BCF4-3D638EEDAEC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_05", "Feladat_05\Feladat_05.csproj", "{20ACCE04-0A0A-4D1B-A452-8521870C1BC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_05", "Feladat_05\Feladat_05.csproj", "{20ACCE04-0A0A-4D1B-A452-8521870C1BC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_06", "Feladat_06\Feladat_06.csproj", "{1B19F052-00A8-451C-9690-9BE5A6FAA992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_06", "Feladat_06\Feladat_06.csproj", "{1B19F052-00A8-451C-9690-9BE5A6FAA992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_08", "Feladat_08\Feladat_08.csproj", "{12574B54-3AC9-4CD3-9C54-901EEA6D7167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_08(chatgpt)", "Feladat_08(chatgpt)\Feladat_08(chatgpt).csproj", "{E5B45F37-7B83-4FF3-A887-A3B0B7910042}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{1B19F052-00A8-451C-9690-9BE5A6FAA992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B19F052-00A8-451C-9690-9BE5A6FAA992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B19F052-00A8-451C-9690-9BE5A6FAA992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12574B54-3AC9-4CD3-9C54-901EEA6D7167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12574B54-3AC9-4CD3-9C54-901EEA6D7167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12574B54-3AC9-4CD3-9C54-901EEA6D7167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12574B54-3AC9-4CD3-9C54-901EEA6D7167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B45F37-7B83-4FF3-A887-A3B0B7910042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B45F37-7B83-4FF3-A887-A3B0B7910042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B45F37-7B83-4FF3-A887-A3B0B7910042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B45F37-7B83-4FF3-A887-A3B0B7910042}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

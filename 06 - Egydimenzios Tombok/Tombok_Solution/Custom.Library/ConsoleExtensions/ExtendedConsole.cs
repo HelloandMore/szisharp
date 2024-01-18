@@ -82,5 +82,12 @@ public static class ExtendedConsole
 
 		return text;
 	}
+	public static void WriteArrayToConsole(ICollection<object> items)
+	{
+		foreach (object item in items)
+		{
+			Console.WriteLine(item);
+		}
+	}
 
 }

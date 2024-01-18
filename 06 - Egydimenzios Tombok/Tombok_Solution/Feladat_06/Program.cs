@@ -1,5 +1,5 @@
 ﻿using IOLibrary;
-const int NUM_OF_TRUCKS = 3;
+const int NUM_OF_TRUCKS = 7;
 
 
 Truck[] trucks = GetTrucks();
@@ -17,8 +17,8 @@ double heaviestTruck = trucks.Max(x => x.Weight);
 Truck mostWeight = trucks.First(x => x.Weight == heaviestTruck);
 Console.WriteLine($"Legnehezebb kamion: {mostWeight}");
 
-bool WereThere10Tonnes = trucks.Any(x => x.Equals(10));
-Console.WriteLine($"{(WereThere10Tonnes?"Volt":"Nem volt")} 10 tonnás kamion");
+bool WereThere10Tonnes = trucks.Any(x => x.Weight.Equals(10));
+Console.WriteLine($"\n{(WereThere10Tonnes?"Volt":"Nem volt")} 10 tonnás kamion");
 
 Truck[] heavierThan10T = trucks.Where(x => x.Weight > 10).ToArray();
 Console.WriteLine("\n10 tonnánál nehezebb kamionok:");

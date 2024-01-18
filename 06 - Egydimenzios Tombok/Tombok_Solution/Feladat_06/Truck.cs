@@ -17,7 +17,7 @@ public class Truck
 
 	public override string ToString()
 	{
-		return $"{this.LicensePlate} rendszámú kamion ({this.Weight}T)";
+		return $"{this.LicensePlate} - ({this.Weight}t)";
 	}
 
 }
