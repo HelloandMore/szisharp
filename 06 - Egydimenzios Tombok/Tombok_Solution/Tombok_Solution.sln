@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_05", "Feladat_05\Fe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_06", "Feladat_06\Feladat_06.csproj", "{1B19F052-00A8-451C-9690-9BE5A6FAA992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_08", "Feladat_08\Feladat_08.csproj", "{12574B54-3AC9-4CD3-9C54-901EEA6D7167}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_08", "Feladat_08\Feladat_08.csproj", "{12574B54-3AC9-4CD3-9C54-901EEA6D7167}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_08(chatgpt)", "Feladat_08(chatgpt)\Feladat_08(chatgpt).csproj", "{E5B45F37-7B83-4FF3-A887-A3B0B7910042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Feladat_08(chatgpt)", "Feladat_08(chatgpt)\Feladat_08(chatgpt).csproj", "{E5B45F37-7B83-4FF3-A887-A3B0B7910042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feladat_09", "Feladat_09\Feladat_09.csproj", "{A76AA446-53AA-4210-A2E6-6568C4EC3688}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{E5B45F37-7B83-4FF3-A887-A3B0B7910042}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5B45F37-7B83-4FF3-A887-A3B0B7910042}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5B45F37-7B83-4FF3-A887-A3B0B7910042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76AA446-53AA-4210-A2E6-6568C4EC3688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76AA446-53AA-4210-A2E6-6568C4EC3688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76AA446-53AA-4210-A2E6-6568C4EC3688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76AA446-53AA-4210-A2E6-6568C4EC3688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -87,7 +87,7 @@ class Program
 	{
 		Album album = new Album();
 
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 3; i++)
 		{
 			string songName = ExtendedConsole.ReadString($"Add meg a(z) {i + 1}. zene címét > ");
 			album.AddSong(songName);

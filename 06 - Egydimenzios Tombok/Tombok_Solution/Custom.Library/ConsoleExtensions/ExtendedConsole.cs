@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Globalization;
-using System.Drawing;
-
-namespace IOLibrary;
+﻿namespace IOLibrary;
 
 public static class ExtendedConsole
 {
@@ -25,7 +17,8 @@ public static class ExtendedConsole
 			if (number > max)
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
-				Console.WriteLine($"A megadott szám nem lehet nagyobb mint {max}");
+				Console.Write("A megadott szám nem lehet nagyobb mint ");
+				Console.ForegroundColor = ConsoleColor.Yellow; Console.WriteLine(max);
 
 				Console.ForegroundColor = ConsoleColor.Green;
 				Console.WriteLine("A folytatáshoz nyomjon meg bármely gombot");
@@ -47,7 +40,7 @@ public static class ExtendedConsole
 			else if (!isNumber)
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("SZÁMOT adj meg!!");
+				Console.WriteLine("SZÁMOT adj meg!!");
 
 				Console.ForegroundColor = ConsoleColor.Green;
 				Console.WriteLine("A folytatáshoz nyomjon meg bármely gombot");
@@ -63,8 +56,8 @@ public static class ExtendedConsole
 		double number = 0;
 		do
 		{
-            Console.Write(prompt);
-            string text = Console.ReadLine();
+			Console.Write(prompt);
+			string text = Console.ReadLine();
 			isNumber = double.TryParse(text, new CultureInfo("en-US"), out number);
 		} while (!isNumber);
 
@@ -76,8 +69,8 @@ public static class ExtendedConsole
 
 		do
 		{
-            Console.Write(prompt);
-            text = Console.ReadLine().Trim();
+			Console.Write(prompt);
+			text = Console.ReadLine().Trim();
 		} while (string.IsNullOrWhiteSpace(text));
 
 		return text;
@@ -86,8 +79,18 @@ public static class ExtendedConsole
 	{
 		foreach (object item in items)
 		{
-			Console.WriteLine(item);
+			if (item is not null)
+			{
+				Console.WriteLine(item);
+			}
 		}
+	}
+	public static string FormatTime(double time)
+	{
+		double minutes = Math.Floor(time / 60);
+		double seconds = Math.Floor(time % 60);
+
+		return $"{minutes}:{seconds.ToString().PadLeft(2, '0')} másodperc";
 	}
 
 }

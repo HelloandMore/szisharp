@@ -25,9 +25,9 @@ Console.WriteLine("\n10 tonnánál nehezebb kamionok:");
 WriteTruckLicense(heavierThan10T);
 
 
-Console.WriteLine($"\nA legkönnyebb kamion a(z)");
+Console.Write($"\nA legkönnyebb kamion a(z) ");
 lightestTruckRow(trucks);
-Console.Write(" sorban volt");
+Console.WriteLine(" sorban volt");
 
 
 
