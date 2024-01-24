@@ -31,7 +31,8 @@ Player tallestPlayer = players.First(player => player.Height == tallest);
 int shortest = players.Min(player => player.Height);
 Player shortestPlayer = players.First(player => player.Height == shortest);
 
-
+TallSmall tallSmall = new TallSmall(tallestPlayer, shortestPlayer);
+Console.WriteLine(tallSmall);
 
 Player[] GetPlayers()
 {

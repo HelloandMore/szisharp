@@ -5,7 +5,7 @@ set /p comment="Add meg a commentet > "
 git add .
 if not %errorlevel%==0 (goto :error)
 
-git commit -m "%comment% %date%"
+git commit -m "%date% - %comment%"
 if not %errorlevel%==0 (goto :error)
 
 git push
