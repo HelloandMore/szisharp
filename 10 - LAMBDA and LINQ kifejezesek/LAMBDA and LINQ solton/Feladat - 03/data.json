@@ -1,0 +1,232 @@
+[
+  {
+    "Brand": "Honda",
+    "Model": "CB600F",
+    "Nickname": "Hornet",
+    "ReleaseYear": 2007,
+    "Cubic": 599,
+    "KW": 75,
+    "Category": "Naked",
+    "TopSpeed": 225
+  },
+  {
+    "Brand": "Suzuki",
+    "Model": "GSF 600 S",
+    "Nickname": "Bandit",
+    "ReleaseYear": 1996,
+    "Cubic": 599,
+    "KW":57,
+    "Category": "Naked",
+    "TopSpeed": 180
+  },
+  {
+    "Brand": "Honda",
+    "Model": "VT 600",
+    "Nickname": "Shadow",
+    "ReleaseYear": 2000,
+    "Cubic": 600,
+    "KW": 25,
+    "Category": "Chopper",
+    "TopSpeed": 148
+  },
+  {
+    "Brand": "Ducati",
+    "Model": "Monster",
+    "Nickname": "",
+    "ReleaseYear": 2001,
+    "Cubic": 750,
+    "KW": 53,
+    "Category": "Naked",
+    "TopSpeed": 210
+  },
+  {
+    "Brand": "Kawasaki",
+    "Model": "Z 1000",
+    "Nickname": "",
+    "ReleaseYear": 2007,
+    "Cubic": 953,
+    "KW": 92,
+    "Category": "Tour",
+    "TopSpeed": 224
+  },
+  {
+    "Brand": "Suzuki",
+    "Model": "VZ 800",
+    "Nickname": "Intruder",
+    "ReleaseYear": 2006,
+    "Cubic": 805,
+    "KW": 39,
+    "Category": "Cruiser",
+    "TopSpeed": 162
+  },
+  {
+    "Brand": "Yamaha",
+    "Model": "YZF",
+    "Nickname": "R1",
+    "ReleaseYear": 2005,
+    "Cubic": 998,
+    "KW": 126,
+    "Category": "Sport",
+    "TopSpeed": 265
+  },
+  {
+    "Brand": "Yamaha",
+    "Model": "XVS 1100",
+    "Nickname": "DragStar",
+    "ReleaseYear": 2000,
+    "Cubic": 1063,
+    "KW": 55,
+    "Category": "Crusier",
+    "TopSpeed": 174
+  },
+  {
+    "Brand": "Aprilia",
+    "Model": "Dorsoduro",
+    "Nickname": "",
+    "ReleaseYear": 2019,
+    "Cubic": 293,
+    "KW": 49,
+    "Category": "Enduro",
+    "TopSpeed": 135
+  },
+  {
+    "Brand": "Triump",
+    "Model": "Strret Triple 765R",
+    "Nickname": "",
+    "ReleaseYear":  2018,
+    "Cubic": 765,
+    "KW": 56,
+    "Category": "Naked",
+    "TopSpeed": 189
+  },
+  {
+    "Brand": "BMW",
+    "Model": "R 1200 R",
+    "Nickname": "",
+    "ReleaseYear": 2011,
+    "Cubic": 1170,
+    "KW": 63,
+    "Category": "Tour",
+    "TopSpeed": 195
+  },
+  {
+    "Brand": "Yamaha",
+    "Model": "FZ6 N",
+    "Nickname": "Fazer",
+    "ReleaseYear": 2008,
+    "Cubic": 649,
+    "KW": 75,
+    "Category": "Naked",
+    "TopSpeed": 205
+  },
+  {
+    "Brand": "Harley Davidson",
+    "Model": "Night Road Special",
+    "Nickname": "",
+    "ReleaseYear": 2017,
+    "Cubic": 1250,
+    "KW": 90,
+    "Category": "Custom",
+    "TopSpeed": 176
+  },
+  {
+    "Brand": "Honda",
+    "Model": "VF 500 F2",
+    "Nickname": "Interceptor",
+    "ReleaseYear":  1985,
+    "Cubic": 497,
+    "KW": 52,
+    "Category": "Tour",
+    "TopSpeed": 167
+  },
+  {
+    "Brand": "Aprilia",
+    "Model": "Atlantic 500",
+    "Nickname": "",
+    "ReleaseYear": 2004,
+    "Cubic": 459,
+    "KW": 29,
+    "Category": "Moped",
+    "TopSpeed": 120
+  },
+  {
+    "Brand": "PIAGGIO",
+    "Model": "Beverly 500",
+    "Nickname": "",
+    "ReleaseYear": 2004,
+    "Cubic": 459,
+    "KW": 29,
+    "Category": "Moped",
+    "TopSpeed": 125
+  },
+  {
+    "Brand": "Kawasaki",
+    "Model": "ZZR 600",
+    "Nickname": "ZZR",
+    "ReleaseYear": 1996,
+    "Cubic": 599,
+    "KW": 72,
+    "Category": "Sport",
+    "TopSpeed": 199
+  },
+  {
+    "Brand": "Kawasaki",
+    "Model": "ZX 750",
+    "Nickname": "Ninja",
+    "ReleaseYear": 1983,
+    "Cubic": 750,
+    "KW": 58,
+    "Category": "Sport",
+    "TopSpeed": 216
+  },
+  {
+    "Brand": "Yamaha",
+    "Model": "FZ 750",
+    "Nickname": "Genesis",
+    "ReleaseYear":  1988,
+    "Cubic": 749,
+    "KW": 72,
+    "Category": "Tour",
+    "TopSpeed": 185
+  },
+  {
+    "Brand": "Yamaha",
+    "Model": "XJ 600",
+    "Nickname": "Diversion",
+    "ReleaseYear": 1993,
+    "Cubic": 599,
+    "KW": 37,
+    "Category": "Tour",
+    "TopSpeed": 184
+  },
+  {
+    "Brand": "Suzuki",
+    "Model": "GSX-R 600",
+    "Nickname": "",
+    "ReleaseYear":  1998,
+    "Cubic": 599,
+    "KW": 67,
+    "Category": "Sport",
+    "TopSpeed": 225
+  },
+  {
+    "Brand": "Kawasaki",
+    "Model": "ZR 550 B",
+    "Nickname": "Zephyr",
+    "ReleaseYear":  1996,
+    "Cubic": 550,
+    "KW": 20,
+    "Category": "Naked",
+    "TopSpeed": 174
+  },
+  {
+    "Brand": "Ural",
+    "Model": "IMZ M72",
+    "Nickname": "",
+    "ReleaseYear": 1957,
+    "Cubic": 750,
+    "KW": 22,
+    "Category": "Classic",
+    "TopSpeed": 114
+  }
+]
