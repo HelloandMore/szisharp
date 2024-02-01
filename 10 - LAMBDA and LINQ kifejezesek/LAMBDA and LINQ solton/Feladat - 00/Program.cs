@@ -38,4 +38,19 @@ List<string> orderStudentsbyNameandPoints = students.OrderBy(x => x.Name).ThenBy
 // ..majd diákok csökkenő sorrendbe rendezése pontok alapján
 List<string> orderStudentsByGradeandPoints = students.OrderByDescending(x => x.Grade).ThenByDescending(x => x.Points).Select(x => x.Name).ToList();
 
-// Évfolyamonként elért pontszám évfolyam szerint csökkenő sorrendben
+// Évfolyamonként elért pontszámok évfolyam szerint csökkenő sorrendben
+
+List<GradeWithPoints> gradeWithPoints = students.GroupBy(x => x.Grade).Select(x => new GradeWithPoints
+{
+	Grade = x.Key,
+	Points = x.Sum(x => x.Points)
+}).OrderByDescending(x => x.Grade).ToList();
+
+// milyen pontszámokat kaptak egyes évfolyamok
+// minden pontszám csak 1x-szer fordulhat elő az eredményben
+
+// módszer 1
+List<int> distinctedPoints = students.Select(x => x.Points).Distinct().ToList();
+
+// módszer 2
+List<int> distinctedPoints2 = students.DistinctBy(x => x.Points).Select(x => x.Points).ToList();
