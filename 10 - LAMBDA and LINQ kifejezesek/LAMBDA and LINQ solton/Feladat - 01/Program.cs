@@ -61,10 +61,9 @@ namespace Feladat___01
 			List<Player> firstSolBornIn1980s = _players.Where(x => x.Birthday.Substring(0, 4) == "1980").ToList();
 			List<Player> secondSolBornIn1980s = _players.Where(x => x.Birthday.StartsWith("1980")).ToList();
 			List<Player> thirdSolBornIn1980s = _players.Where(x => x.Birthday.Contains("1980")).ToList();
-			List<Player> fourthSolBornIn1980s = _players.Where(x => int.Parse(x.Birthday.Split('-')[0]) == 1980).ToList();
+			List<Player> fourthSolBornIn1980s = _players.Where(x => int.Parse(x.Birthday.Split('.')[0]) == 1980).ToList();
 			List<Player> fifthSolBornIn1980s = _players.Where(x => x.Birthday.Split('-')[0] == "1980").ToList();
-			List<Player> sixthSolBornIn1980s = _players.Where(x => DateTime.Parse(x.Birthday).Year == 1980).ToList();
-            Console.WriteLine("Solutions are not printed out (feladat_04)");
+			List<Player> sixthSolBornIn1980s = _players.Where(x => DateTime.Parse(x.Birthday).Year == 1980).ToList();;
 
             // feladat_05
             // Játékosok rendezése név szerint csökkenő (Z-A), magasság szerint növekvő sorrendbe
@@ -90,13 +89,30 @@ namespace Feladat___01
 			Console.WriteLine($"Players born in the '90-s (teacher sol): {sol2BornIntheNinties}");
 
 			// feladat_08
-			// Játékosok csapatonkénti rendezése
-			// (nincs kész)
-			List<PlayersByTeam> sortByTeams = _players.GroupBy(x => x.Club)
-													.Select(x => new PlayersByTeam
-													{
-														Team = x.Key
-													}).ToList();
-        }
+			// Játékosok csapatonkénti rendezése, majd kiiratása
+			// (Gorgi)
+			List<Team> playersByTeam = _players.GroupBy(p => p.Club)
+											   .Select(p => new Team
+											   {
+												   Name = p.Key,
+												   PlayersName = p.Select(p => p.Name).ToList()
+											   })
+											   .ToList();
+
+			//foreach (var item in playersByTeam)
+			//{
+			//	Console.WriteLine(item.Name);
+
+			//	foreach (var item1 in item.PlayersName)
+			//	{
+			//		Console.WriteLine($"- {item1}");
+			//	}
+			//	Console.WriteLine();
+			//}
+			foreach (Team team in playersByTeam)
+			{
+                Console.WriteLine(team);
+            }
+		}
 	}
 }
