@@ -21,10 +21,22 @@ void WriteToConsole(string text, ICollection<Motorcycle> motorcycles)
 	Console.WriteLine(string.Join('\n', motorcycles));
 }
 
-void WriteNickToConsole(string text, ICollection<Nicknames> nicknames)
+void WriteOrderedToConsole(string text, ICollection<MotorOrdered> motorcycless)
 {
 	Console.WriteLine(text);
-	Console.WriteLine(string.Join('\n', nicknames));
+	Console.WriteLine(string.Join('\n', motorcycless));
+}
+
+void WriteStringtoConsole(string text, ICollection<string> motorcycless)
+{
+	Console.WriteLine(text);
+	Console.WriteLine(motorcycless);
+}
+
+void WriteInttoConsole(string texet, ICollection<int> motorcyclesss)
+{
+	Console.WriteLine(texet);
+	Console.WriteLine(motorcyclesss);
 }
 
 void WriteSingleToConsole(string text, Motorcycle motorcycle)
@@ -92,57 +104,75 @@ WriteToConsole(isThereAnyKawasakiAbove150Max ? "\nKawasaki 'gyártotmányú' mot
 // 10 - Keressük ki a 'BMW' gyártotmányú motorkerékpárokat, melyeket 2010 előtt gyárottak és a motor köbcentije minimum 1000!
 bool isThereAnyBmwBf2010MinCB1000 = motorcycles.Any(x => x.Brand == "BMW" && x.ReleaseYear < 2010 && x.Cubic >= 1000);
 List<Motorcycle> BmwBf2010MinCB1000 = motorcycles.Where(x => x.Brand == "BMW" && x.ReleaseYear < 2010 && x.Cubic >= 1000).ToList();
-WriteToConsole(isThereAnyBefore1960 ? "\nBMW-k, melyek 2010 előtt gyártottak, és legalább 1000 köbcentijű a motorja: " : "\nNincs olyan BMW, melyet 2010 előtt gyártottak, és legalább 1000 köbcentijű a motorja", BmwBf2010MinCB1000);
-
+WriteToConsole(isThereAnyBmwBf2010MinCB1000 ? "\nBMW-k, melyek 2010 előtt gyártottak, és legalább 1000 köbcentijű a motorja: " : "\nNincs olyan BMW, melyet 2010 előtt gyártottak, és legalább 1000 köbcentijű a motorja", BmwBf2010MinCB1000);
 
 // 12 - Keressük a motorkerékpárok beceneveit (nickname)!
-List<Nicknames> NicknamesForCycles = motorcycles.GroupBy(g => g.Nickname)
-									 .Select(n => new Nicknames
-									 {
-										 Nickname = n.Key,
-										 Brand = motorcycles.Select(g => g.Nickname).ToString()
-									 }).ToString();
+List<string> NicknamesForCycles = motorcycles.Select(x => x.Nickname).ToList();
+WriteStringtoConsole("\nMotorok beceneve: ", NicknamesForCycles);
 
 
 // 13 - Keressük azokat a motorkerékpárokat, melyek neveiben szerepel 'FZ' kifejezés!
-List<string> nameContainsFZ = motorcycles.Contains(x => x.Nickname == "FZ");
+List<Motorcycle> nicksContFZ = motorcycles.Where(x => x.Nickname.ToLower().Contains("fz")).ToList();
+WriteToConsole("\nMotorok, melynek a nevében szerepel az 'FZ' kifejezés: ", nicksContFZ);
 
 
 // 14 - Keressük azokat a motorkerékpárokat, melyek nevei 'C' betűvel kezdődnek!
-
+List<Motorcycle> motorsWithStartingLetterC = motorcycles.Where(m => m.Nickname.ToLower().StartsWith("c")).ToList();
+WriteToConsole("\nMotorok, melynek a nevei 'C' betűvel kezdődnek: ", motorsWithStartingLetterC);
 
 // 15 - Keressük az első motorkerékpárt az 'adatbázisunkból'!
-
+Motorcycle firstMotor = motorcycles.First();
+WriteSingleToConsole("\nAz első motor az 'adatbázisban': ", firstMotor);
 
 // 16 - Keressük az utolsó motorkerékpárt az 'adatbázisunkból'!
-
+Motorcycle lastMotor = motorcycles.Last();
+WriteSingleToConsole("\nAz utolsó motor az adatbázisban: ", lastMotor);
 
 // 17 - Rendezzük növekvő sorrendbe gyártási év alapján az 'adatbázisban' szereplő motorkerékpárokat.
-
+List<Motorcycle> orderdListByYear = motorcycles.OrderBy(m => m.ReleaseYear).ToList();
+WriteToConsole("\nGyártási év alapján sorba rendezve az adatbázis elemei: ", orderdListByYear);
 
 // 18 - Rendezzük csökkenő sorrendbe a 'Honda' által gyártott motorkerékpárokat, melyek teljesítménye legalább 25kW és 2005 után gyártották őket.
-
+List<Motorcycle> orderedListOfHondas = motorcycles.Where(m => m.Brand == "Honda" && m.KW >= 25 && m.ReleaseYear > 2005)
+												   .OrderByDescending(m => m.KW).ToList();
+WriteToConsole("\n'Honda' által gyártott motorkerékpárok, melyek teljesítménye legalább 25kW és 2005 után gyártották őket: ", orderedListOfHondas);
 
 // 19 - Melyek azok a  motorkerékpárok, melyek nem rendelkeznek becenévvel?
-
+List<Motorcycle> motorsWithNicknames = motorcycles.Where(m => m.Nickname is null).ToList();
+WriteToConsole("\nMotorok, melyeknek nincs beceneve: ", motorsWithNicknames);
 
 // 20 - Mekkora az 'adatbázisban' szereplő motorkerékpárok sebességének az átlaga?
-
+double averageSpeed = motorcycles.Average(m => m.TopSpeed);
+Console.WriteLine($"\nMotorok átlagsebessége: {averageSpeed}");
 
 // 21 - Melyik a legyorsabb motorkerékpár? Feltételezzük, hogy csak egy ilyen van!
-
+Motorcycle fastestMotor = motorcycles.MaxBy(m => m.TopSpeed);
+WriteSingleToConsole("\nLeggyorsabb motor az adatbázisban: ", fastestMotor);
 
 // 22 - Hány kategória található meg az 'adatbázisban'?
-
+int numberOfCategories = motorcycles.Select(m => m.Category).Distinct().Count();
+Console.WriteLine($"\nAz adatbázisban {numberOfCategories} kategória van");
 
 // 23 - Határozza meg az 'adatbázisban' talalható motorkerékpárok átlag életkorát!
-
+double averageAgeOfMotors = motorcycles.Average(m => DateTime.Now.Year - m.ReleaseYear);
+Console.WriteLine($"\nÁtlag kora a motoroknak: {averageAgeOfMotors}");
 
 // 24 - Van-e 'Java' gyártmányú motorkerékpár az 'adatbázisban'?
-
+bool isThereMotorMadeByJava = motorcycles.Any(m => m.Brand.ToLower() == "java");
+Console.WriteLine($"\n{(isThereMotorMadeByJava ? "Van" : "Nincs")} olyan motor az adatbázisban, mely 'Java' gyártmányú");
 
 // 25 - Rendezzül növekvő sorrende az 5 betűvel rendelkező gyártók motorkerékpárjait,
 //         majd csökkenő sorrendbe gyártási év alapján és az eredményben csak a nevet és
 //         a gyártási évet jelenítse meg!
 
+List<MotorOrdered> motorOrdereds = motorcycles.Where(m => m.Brand.Length == 5)
+											   .OrderBy(m => m.Brand)
+											   .ThenByDescending(m => m.ReleaseYear)
+											   .Select(m => new MotorOrdered
+											   {
+												   MotorName = m.Nickname,
+												   ReleasYear = m.ReleaseYear,
+											   })
+											   .ToList();
+WriteOrderedToConsole("\nMotorok növekvő sorrende az 5 betűvel rendelkező gyártók szerint, majd csökkenő sorrendbe gyártási év alapján és az eredményben csak a név és a gyártási év jelenjen meg: ", motorOrdereds);
 Console.ReadLine();

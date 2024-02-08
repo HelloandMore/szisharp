@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
@@ -41,28 +42,52 @@ List<Movie> movies = LoadData();
 WriteToConsole($"Data ({movies.Count})", movies);
 
 // 1 - Hány film adatát dolgozzuk fel?
+int amountOfMovies = movies.Count;
+Console.WriteLine($"\nEnnyi film van az adatbázisban: {amountOfMovies}");
 
 // 2 - Mekkora bevételt hoztak a filmek Amerikában?
+long sumOfUSRevenue = movies.Where(x => x.USGross != null)
+                           .Sum(x => x.USGross.Value);
+long sumOfUSRevenue2 = movies.Sum(x => x.USGross ?? 0);
+
+Console.WriteLine($"\nEnnyi bevételt hoztak összesen a filmek az USAban: {sumOfUSRevenue}");
+Console.WriteLine($"Másik megoldás: {sumOfUSRevenue2}");
 
 // 3 - Mekkora bevételt hoztak a filmek Világszerte?
+long sumOfWorldwideRev = movies.Sum(x => x.WorldwideGross ?? 0);
+Console.WriteLine($"\nVilágszerte ennyi bevételt hoztak a filmek: {sumOfWorldwideRev}");
 
 // 4 - Hány film jelent meg az 1990-es években?
+int countOfMoviesProducedIn1990s = movies.Where(x => x.ReleaseDate.Year > 1990 && x.ReleaseDate.Year < 2000).Count();
 
 // 5 - Hányan szavaztak összessen az IMDB-n?
+long countOfIMDBVotes = movies.Where(x => x.IMDBVotes.HasValue).Sum(x => x.IMDBVotes.Value);
 
 // 6 - Hányan szavaztak átlagossan az IMDB-n?
+double sumOfIMDBVotes = movies.Average(x => x.IMDBVotes ?? 0);
 
 // 7 - A filmek  világszerte átlagban mennyit hoztak a konyhára?
+double averageWWRevenue = movies.Average(x => x.WorldwideGross ?? 0);
 
 // 8 - Hány filmet rendezett 'Christopher Nolan' ?
+int sumByChristopherNolan = movies.Count(x => x.Director?.ToLower() == "christopher nolan");
 
 // 9 - Melyik filmeket rendezte 'James Cameron'?
+List<Movie> moviesByJamesCameron = movies.Where(x => x.Director?.ToLower() == "james cameron").ToList();
 
 // 10 - Keresse ki a 'Fantasy' kaland (Adventure) zsáner kategóriájjú filmeket.
+List<Movie> fantasyMovies = movies.Where(x => x.CreativeType?.ToLower() == "Fantasy" && x.MajorGenre?.ToLower() == "adventure").ToList();
 
 // 11 - Kik rendeztek akció (Action) filmeket és mikor?
+List<ActionDirectorsAndWhen> actionDirectorsandWhen = movies.Where(x => x.MajorGenre == "Action").Where(x => x.Director != null).GroupBy(x => x.Director)
+                                                            .Select(x => new ActionDirectorsAndWhen
+                                                            {
+                                                                name = x.Key,
+                                                                times = x.Select(x => x.ReleaseDate).ToList(),
+                                                            }).ToList();
 
 // 12 - 'Paramount Pictures' horror filmjeinek cime?
+List<string> nameOfParamountHorrorMovies = movies.Where(x => x.MajorGenre.ToLower() == "horror" && x.Distributor.ToLower() == "paramount pictures").ToList();
 
 // 13 - Van-e olyan film melyet 'Tom Crusie' rendezett?
 
