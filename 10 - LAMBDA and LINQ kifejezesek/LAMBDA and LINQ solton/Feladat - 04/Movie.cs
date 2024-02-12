@@ -15,7 +15,7 @@ public class Movie
     /// USA bevétel
     /// </summary>
     [JsonPropertyName("US Gross")]
-    public int? USGross {get; set; }
+    public long? USGross {get; set; }
 
     /// <summary>
     /// Bevétel a világban
