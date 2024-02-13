@@ -2,49 +2,48 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 
 List<Movie> LoadData()
 {
-    JsonSerializerOptions options = new JsonSerializerOptions
-    {
-        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-        PropertyNameCaseInsensitive = true,
-        WriteIndented = true,
-    };
+	JsonSerializerOptions options = new JsonSerializerOptions
+	{
+		Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+		PropertyNameCaseInsensitive = true,
+		WriteIndented = true,
+	};
 
-    options.Converters.Add(new DateFormatConverter());
+	options.Converters.Add(new DateFormatConverter());
 
-    FileStream fs = new FileStream("./../../../data.json", FileMode.Open, FileAccess.Read, FileShare.None);
-    StreamReader sr = new StreamReader(fs, Encoding.UTF8);
-    
-    string jsonData = sr.ReadToEnd();
-    return JsonSerializer.Deserialize<List<Movie>>(jsonData, options);
+	FileStream fs = new FileStream("./../../../data.json", FileMode.Open, FileAccess.Read, FileShare.None);
+	StreamReader sr = new StreamReader(fs, Encoding.UTF8);
+
+	string jsonData = sr.ReadToEnd();
+	return JsonSerializer.Deserialize<List<Movie>>(jsonData, options);
 
 }
 
- void WriteToConsole(string text, ICollection<Movie> movies)
+void WriteToConsole(string text, ICollection<Movie> movies)
 {
-    Console.WriteLine(text);
-    Console.WriteLine(string.Join('\n', movies));
+	Console.WriteLine(text);
+	Console.WriteLine(string.Join('\n', movies));
 }
 
- void WriteSingleToConsole(string text, Movie movie)
+void WriteSingleToConsole(string text, Movie movie)
 {
-    Console.WriteLine(text);
-    Console.WriteLine(movie);
+	Console.WriteLine(text);
+	Console.WriteLine(movie);
 }
 
 void WriteStringToConsole(string text, ICollection<string> movies)
 {
-    Console.WriteLine(text);
-    Console.WriteLine(string.Join('\n', movies));
+	Console.WriteLine(text);
+	Console.WriteLine(string.Join('\n', movies));
 }
 
-void WriteNumberFilmsGroupedByRatingToConsole(string text, ICollection<NumberFilmsGroupedByRating> movies)
+void WriteNumberFilmsGroupedByRatingToConsole(string text, ICollection<NumberMoviesGroupedByRating> movies)
 {
 	Console.WriteLine(text);
 	Console.WriteLine(string.Join('\n', movies));
@@ -172,12 +171,12 @@ int numberOfMoviesReleasedInDecember = movies.Count(m => m.ReleaseDate.Month == 
 Console.WriteLine($"\nDecemberben ennyi film jelent meg: {numberOfMoviesReleasedInDecember}");
 
 // 23 - Egyes besorolásokban (Rating) hány film található?
-List<NumberFilmsGroupedByRating> numberOfFilmsInRatings = movies.Where(m => m.Rating != null)
+List<NumberMoviesGroupedByRating> numberOfFilmsInRatings = movies.Where(m => m.Rating != null)
 																.GroupBy(m => m.Rating)
-																.Select(m => new NumberFilmsGroupedByRating
+																.Select(m => new NumberMoviesGroupedByRating
 																{
 																	RatingName = m.Key,
-																	NumberOfFilms = m.Count()
+																	NumberOfMovies = m.Count()
 																}).ToList();
 WriteNumberFilmsGroupedByRatingToConsole("\nEnnyi film található egyes besorolásokban: ", numberOfFilmsInRatings);
 
