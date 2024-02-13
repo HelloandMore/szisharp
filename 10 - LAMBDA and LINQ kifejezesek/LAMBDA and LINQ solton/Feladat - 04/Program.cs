@@ -69,7 +69,7 @@ int numOfMoviesFromtheNinties = movies.Where(x => x.ReleaseDate.Year >= 1990 && 
 Console.WriteLine($"\nA 90'-es években {numOfMoviesFromtheNinties} film jelent meg");
 
 // 5 - Hányan szavaztak összessen az IMDB-n?
-int? sumOfIMDBvotes = movies.Sum(x => x.IMDBVotes);
+long? sumOfIMDBvotes = movies.Sum(x => x.IMDBVotes);
 Console.WriteLine($"\nAz IMDB-n szavazók száma: {sumOfIMDBvotes}");
 
 // 6 - Hányan szavaztak átlagossan az IMDB-n?
@@ -117,8 +117,9 @@ Console.WriteLine($"\n{(anyFilmByTomCruise ? "Van" : "Nincs")} olyan film, melye
 
 
 // 14 - A 'Little Miss Sunshine' filme mekkora össz bevételt hozott?
-long? incomeOfLittleMissSunshine = movies.Where(m => m.Title?.ToLower() == "little miss sunshine")
-									   .Sum(m => m.USDVDSales + m.WorldwideGross + m.USGross);
+/* long? incomeOfLittleMissSunshine = movies.Where(m => m.Title?.ToLower() == "little miss sunshine")
+									   .Sum(m => m.USDVDSales + m.WorldwideGross + m.USGross); */
+long? incomeOfLittleMissSunshine = movies.SingleOrDefault(x => x.Title.ToLower() == "little miss sunshine")?.WorldwideGross ?? 0;
 Console.WriteLine($"\nA Little Miss Sunshine ennyi bevételt hozott összesen: {incomeOfLittleMissSunshine}");
 
 
@@ -249,3 +250,11 @@ Console.WriteLine($"\nA Spider-Man filmek az USA-ban ennyit hoztak: {spiderManMo
 List<string> superHeroMoviesTitles = movies.Where(m => m.CreativeType?.ToLower() == "super hero")
 											.Select(m => m.Title).ToList();
 WriteStringToConsole("\nFilmek, melyek a címük alapján szuperhősökről szólnak (contains a 'super hero'): ", superHeroMoviesTitles);
+
+// 35 - Első 10 film
+List<Movie> first10 = movies.Take(10).ToList();
+WriteToConsole("\nElső 10 film a listában: ", first10);
+
+// 36 - 30 és 40 közti filmek a sorból (30 és 40 közti indexek)
+List<Movie> page3 = movies.Skip(30).Take(10).ToList();
+WriteToConsole("\n30 és 40 közti filmek a sorból: ", page3);
