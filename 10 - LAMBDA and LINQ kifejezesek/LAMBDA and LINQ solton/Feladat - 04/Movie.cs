@@ -27,13 +27,13 @@ public class Movie
     /// USA eladott DVD száma
     /// </summary>
     [JsonPropertyName("US DVD Sales")]
-    public long? USDVDSales {get; set; }
+    public int? USDVDSales {get; set; }
 
     /// <summary>
     /// Film elkészítésének költsége
     /// </summary>
     [JsonPropertyName("Production Budget")]
-    public long? ProductionBudget { get; set; }
+    public int? ProductionBudget { get; set; }
 
     /// <summary>
     /// Megjelenés dátuma
@@ -51,7 +51,7 @@ public class Movie
     /// Film hossza percekben
     /// </summary>
     [JsonPropertyName("Running Time min")]
-    public long? RunningTime { get; set; }
+    public int? RunningTime { get; set; }
 
     /// <summary>
     /// Forgalmazó
@@ -99,7 +99,7 @@ public class Movie
     /// IMDB értékelők száma
     /// </summary>
     [JsonPropertyName("IMDB Votes")]
-    public long? IMDBVotes {get; set; }
+    public int? IMDBVotes {get; set; }
 
     public Movie()
     {
