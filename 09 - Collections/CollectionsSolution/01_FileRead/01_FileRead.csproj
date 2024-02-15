@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\07 - Ketdimeznios Tombok\Custom.Library\Custom.Library.csproj" />
+    <ProjectReference Include="..\Custom.Library\Custom.Library.csproj" />
   </ItemGroup>
 
   <ItemGroup>
