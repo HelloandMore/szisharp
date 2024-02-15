@@ -29,7 +29,12 @@ Console.WriteLine();
 //5 - atlagfelett.txt allományba keressük ki azon tanulókat kiknek pontjai meghaladják az átlagot!
 List<Student> studentsAboveAverage = students.Where(x => x.Average > classAverage).ToList();
 
+await FileService.WriteToFileAsync2("atlagfelett", studentsAboveAverage);
+
 //6 - Van e kitünő tanulónk?
+
+bool hasExcellentStudent = students.Any(x => x.Average == 5);
+Console.WriteLine($"{(hasExcellentStudent ? "Van" : "Nincs")} kitűnő tanuló az osztályban");
 //7 - Hány elégtelen, elégséges, jó, jeles és kitünő tanuló van az osztályban?
 //    Értékhatárok:
 //	-elégtelen, ha: 0.00 - 1.99

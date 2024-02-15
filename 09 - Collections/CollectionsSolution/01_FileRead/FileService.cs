@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Net.NetworkInformation;
+using System.Numerics;
 using System.Text;
 
 public static class FileService
@@ -43,9 +44,9 @@ public static class FileService
 
 
 		string path = Path.Combine("source", fileName);
-		File.ReadAllLinesAsync(path, Encoding.UTF7);
+		File.ReadAllLinesAsync(path, Encoding.UTF8);
 
-		string[] lines = await File.ReadAllLinesAsync(path, Encoding.UTF7);
+		string[] lines = await File.ReadAllLinesAsync(path, Encoding.UTF8);
 
 		foreach (string line in lines.Skip(1)) // .Skip(1) átugorja az első sort, mert balfarok vagyok
 		{
@@ -70,7 +71,7 @@ public static class FileService
 
 		string path = Path.Combine("source", fileName);
 
-		IAsyncEnumerable<string> lines = File.ReadLinesAsync(path, Encoding.UTF7);
+		IAsyncEnumerable<string> lines = File.ReadLinesAsync(path, Encoding.UTF8);
 
 		await foreach (string line in lines)
 		{
@@ -101,7 +102,7 @@ public static class FileService
 
 		string path = Path.Combine("source", fileName);
 
-		string text = await File.ReadAllTextAsync(path, Encoding.UTF7);
+		string text = await File.ReadAllTextAsync(path, Encoding.UTF8);
 
 		string[] lines = text.Split("\n");
 
@@ -116,6 +117,37 @@ public static class FileService
 		}
 
 		return students;
+	}
+	#endregion
+	#region File Write
+	public static async Task WriteToFileAsync2(string fileName, ICollection<Student> students)
+	{
+		Directory.CreateDirectory("output");
+		string path = Path.Combine("output", $"{fileName}.txt");
+		List<string> data = new List<string>();
+
+		using FileStream fs = new FileStream(path, FileMode.CreateNew, FileAccess.Write, FileShare.None, 128);
+		using StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
+
+		foreach (Student student in students)
+		{
+			data.Add($"{student.Name}\t{student.Average}");
+		}
+
+		File.WriteAllLinesAsync(path, data, Encoding.UTF8);
+	}
+	public static async Task WriteToFileAsync3(string fileName, ICollection<Student> students)
+	{
+		Directory.CreateDirectory("output");
+		string path = Path.Combine("output", $"{fileName}.txt");
+		StringBuilder contents = new StringBuilder();
+
+		foreach (Student student in students)
+		{
+			contents.AppendLine($"{student.Name}\t{student.Average}");
+		}
+
+		await File.WriteAllTextAsync(path, contents.ToString(), Encoding.UTF8);
 	}
 	#endregion
 }
