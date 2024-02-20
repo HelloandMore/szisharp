@@ -1,3 +1,3 @@
 ﻿using IOLibrary;
 
-List<Student> students = await FileService.ReadFromFile("adatok.txt");
+List<Student> students = await FileService.ReadFromFileAsync("adatok.txt");

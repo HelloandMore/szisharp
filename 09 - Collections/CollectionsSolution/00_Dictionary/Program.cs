@@ -24,13 +24,13 @@ foreach (KeyValuePair<string, int> month in months)
 }
 
 
-Dictionary<string, List<int>> lottoWinners = new Dictionary<string, List<int>>()
+Dictionary<string, List<int>> lotteryWinners = new Dictionary<string, List<int>>()
 {
     { "Hedi", new List<int>{ 4, 5, 6, 7, 8, 9, 10} }
 };
 
-lottoWinners.Add("Zalan", new List<int> { 6, 4, 67, 8, 4, 6, 7 });
-lottoWinners["Dani"] = new List<int> { 1, 2, 3, 4, 5, 6, 7, };
+lotteryWinners.Add("Zalan", new List<int> { 6, 4, 67, 8, 4, 6, 7 });
+lotteryWinners["Dani"] = new List<int> { 1, 2, 3, 4, 5, 6, 7, };
 
 /*--------------------------------------------------------*/
 
