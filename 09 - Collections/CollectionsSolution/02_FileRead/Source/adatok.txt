@@ -1,0 +1,38 @@
+Christie	Agatha	1890-09-15	Tíz kicsi néger	9789630788984	EURÓPA KÖNYVKIADÓ KFT.	2010	2090	krimi	266	785
+Christie	Agatha	1890-09-15	A váratlan vendég	9789635490479	EURÓPA KÖNYVKIADÓ KFT.	2004	1406	krimi	200	835
+Christie	Agatha	1890-09-15	És eljõ a halál...	9789630786430	EURÓPA KÖNYVKIADÓ KFT.	2007	1900	krimi	292	27
+Christie	Agatha	1890-09-15	A vád tanúja	963841345X	Hunga-Print	1994	3000	krimi	254	705
+Christie	Agatha	1890-09-15	Éjféltájt	9789630786249	EURÓPA KÖNYVKIADÓ KFT.	2008	1900	krimi	272	412
+Fable	Vavyan	1956-03-20	Tûzvarázs	9789639300347	FABYEN KIADÓ	2010	1836	krimi	488	436
+Fable	Vavyan	1956-03-20	Vészbejárat	9789639300279	Fabyen Kiadó	2008	2095	krimi	472	399
+Fable	Vavyan	1956-03-20	Ébredj velem!	9639300200	Tóthágas Kiadó	2007	1668	krimi	490	14
+King	Stephen	1947-09-21	A tûzgyújtó	9789630786836	EURÓPA KÖNYVKIADÓ KFT.	2010	3040	krimi	520	333
+King	Stephen	1947-09-21	Álomcsapda	9630779501	EURÓPA KÖNYVKIADÓ KFT.	2006	1870	sci-fi	752	90
+King	Stephen	1947-09-21	Hasznos holmik	9630778246	EURÓPA KÖNYVKIADÓ KFT.	2005	1683	horror	720	738
+King	Stephen	1947-09-21	Dolores	9600781875	EURÓPA KÖNYVKIADÓ KFT.	2006	2125	thriller	264	985
+Harrison	Harry	1925-03-12	Fagyos éden	9789639828605	METROPOLIS MEDIA GROUP	2010	3791	sci-fi	460	499
+Asimov	Isaac	1920-01-02	A biológia rövid története	11111111111	Gondolat Kiadó	1972	1200	természettudomány	278	514
+Asimov	Isaac	1920-01-02	A Hold tragédiája	22222222222	Kozmosz Könyvek	1979	1500	szépirodalom	310	927
+Castelot	André	1911-01-23	Napóleon	9500274612	EURÓPA KÖNYVKIADÓ KFT.	2004	2300	történelem	653	247
+Lefebvre	Georges	1874-08-06	Napóleon	963280256X	Gondolat	1975	1500	történelem	783	160
+Allaby	Michael	1933-04-06	A Föld enciklopédiája	9789630961615	KOSSUTH KIADÓ ZRT.	2010	9491	természettudomány	608	881
+Hutchinson	Robert	1957-11-12	A Föld enciklopédiája	9789630961615	KOSSUTH KIADÓ ZRT.	2010	9491	természettudomány	608	27
+Attenborough	David	1926-05-08	Az élet erõpróbái	9638227117	PARK KÖNYVKIADÓ KFT.	1994	1701	természettudomány	326	285
+Attenborough	David	1926-05-08	Az élõ bolygó - a föld mai arculata	9635300077	PARK KÖNYVKIADÓ KFT.	1994	2081	természettudomány	324	600
+Attenborough	David	1926-05-08	Az elsõ édenkert	9630267217	PARK KÖNYVKIADÓ KFT.	1989	1200	természettudomány	238	273
+Sparks	John	1943-08-11	Az óceán	9789639693456	Mérték Kiadó	2007	11042	természettudomány	512	706
+Dinwiddie	Robert	1963-07-27	Az óceán	9789639693456	Mérték Kiadó	2007	11042	természettudomány	512	186
+Dinwiddie	Robert	1963-07-27	Az univerzum	963-967-800-7	IKAR Kiadó	2007	11042	természettudomány	512	749
+Eales	Philip	1970-05-05	Az óceán	9789639693456	Mérték Kiadó	2007	11042	természettudomány	512	483
+Eales	Philip	1970-05-05	Az univerzum	963-967-800-7	IKAR Kiadó	2007	11042	természettudomány	512	737
+Cousteau	Fabien	1890-09-15	Az óceán	9789639693456	Mérték Kiadó	2007	11042	természettudomány	512	990
+Jókai	Mór	1825-02-18	A gyevi törvény - Tanulságos mesék, mondák Mátyás királyról	9789639581197	NAGYKÖNYV KIADÓ	2010	1511	mesekönyv	48	320
+Jókai	Mór	1825-02-18	1848 - a magyar szabadságharcz 1848-49-ben	9789630960519	KOSSUTH KIADÓ ZRT.	2009	6641	történelem	476	630
+Jókai	Mór	1825-02-18	A kõszívû ember fiai	9789636451004	EURÓPA KÖNYVKIADÓ KFT.	2006	758	szépirodalom	442	924
+Móra	Ferenc	1879-07-19	A gyevi törvény - Tanulságos mesék, mondák Mátyás királyról	9789639581197	NAGYKÖNYV KIADÓ	2010	1511	mesekönyv	48	869
+Móra	Ferenc	1879-07-19	A nagyhatalmú sündisznócska	9789633468814	 HOLNAP KIADÓ KFT.	2010	1615	mesekönyv	14	828
+Móra	Ferenc	1879-07-19	Aranykoporsó	9789630779180	EURÓPA KÖNYVKIADÓ KFT.	2005	808	szépirodalom	472	961
+Fowler	Martin	1963-09-21	Refactoring - Kódjavítás újratervezéssel	9639637130	Kiskapu Kiadó	2006	5525	informatika	372	846
+Fowler	Martin	1963-09-21	Domain-Specific Languages	9780321712943	Addison-Wesley Professional	2010	8735	informatika	640	58
+Gamma	Erich	1961-12-31	Design Patterns: Elements of Reusable Object-Oriented Software	9780201633610	Addison-Wesley Professional	1994	5980	informatika	416	445
+Gamma	Erich	1961-12-31	Programtervezési minták - Újrahasznosítható elemek objektumközpontú programokhoz	9639301779	Kiskapu - Addison-Wesley	2004	5980	informatika	421	726

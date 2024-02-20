@@ -1,15 +1,12 @@
-﻿using System.Net.NetworkInformation;
-using System.Numerics;
-using System.Text;
-
-public static class FileService
+﻿public static class FileService
 {
 	#region File Read
 	//modszer 1
-	public static async Task<List<Student>> ReadFromFileAsync(string fileName) {  
-		
-		List<Student> students = new List<Student>();
-		Student student = null;
+	public static async Task<List<Book>> ReadFromFileAsync(string fileName)
+	{
+
+		List<Book> students = new List<Book>();
+		Book student = null;
 		string line = string.Empty;
 		string[] data = null;
 
@@ -25,7 +22,7 @@ public static class FileService
 			line = await sr.ReadLineAsync();
 			data = line.Split("\t");
 
-			student = new Student();
+			student = new Book();
 			student.Name = data[0];
 			student.Average = double.Parse(data[1]);
 
@@ -36,10 +33,10 @@ public static class FileService
 	}
 
 	//modszer 2
-	public static async Task<List<Student>> ReadFromFileAsyncV2(string fileName)
+	public static async Task<List<Book>> ReadFromFileAsyncV2(string fileName)
 	{
-		List<Student> students = new List<Student>();
-		Student student = null;
+		List<Book> students = new List<Book>();
+		Book student = null;
 		string[] data = null;
 
 
@@ -51,7 +48,7 @@ public static class FileService
 		foreach (string line in lines.Skip(1)) // .Skip(1) átugorja az első sort, mert balfarok vagyok
 		{
 			data = line.Split('\t');
-			student = new Student();
+			student = new Book();
 			student.Name = data[0];
 			student.Average = double.Parse(data[1]);
 
@@ -62,10 +59,10 @@ public static class FileService
 	}
 
 	//modszer 3
-	public static async Task<List<Student>> ReadFromFileAsyncV3(string fileName)
+	public static async Task<List<Book>> ReadFromFileAsyncV3(string fileName)
 	{
-		List<Student> students = new List<Student>();
-		Student student = null;
+		List<Book> students = new List<Book>();
+		Book student = null;
 		string[] data = null;
 
 
@@ -79,9 +76,9 @@ public static class FileService
 
 			bool isNumber = double.TryParse(data[1], out double average);
 
-			if(isNumber)
+			if (isNumber)
 			{
-				student = new Student();
+				student = new Book();
 				student.Name = data[0];
 				student.Average = double.Parse(data[1]);
 
@@ -93,10 +90,10 @@ public static class FileService
 	}
 
 	//modszer 4
-	public static async Task<List<Student>> ReadFromFileAsyncV4(string fileName)
+	public static async Task<List<Book>> ReadFromFileAsyncV4(string fileName)
 	{
-		List<Student> students = new List<Student>();
-		Student student = null;
+		List<Book> students = new List<Book>();
+		Book student = null;
 		string[] data = null;
 
 
@@ -109,7 +106,7 @@ public static class FileService
 		foreach (string line in lines.Skip(1)) //.Skip(1) átugorja az első sort, mert balfarok vagyo
 		{
 			data = line.Split('\t');
-			student = new Student();
+			student = new Book();
 			student.Name = data[0];
 			student.Average = double.Parse(data[1]);
 
@@ -120,7 +117,7 @@ public static class FileService
 	}
 	#endregion
 	#region File Write
-	public static async Task WriteToFileAsync2(string fileName, ICollection<Student> students)
+	public static async Task WriteToFileAsync2(string fileName, ICollection<Book> students)
 	{
 		Directory.CreateDirectory("output");
 		string path = Path.Combine("output", $"{fileName}.txt");
@@ -129,20 +126,20 @@ public static class FileService
 		using FileStream fs = new FileStream(path, FileMode.CreateNew, FileAccess.Write, FileShare.None, 128);
 		using StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
 
-		foreach (Student student in students)
+		foreach (Book student in students)
 		{
 			data.Add($"{student.Name}\t{student.Average}");
 		}
 
 		File.WriteAllLinesAsync(path, data, Encoding.UTF8);
 	}
-	public static async Task WriteToFileAsync3(string fileName, ICollection<Student> students)
+	public static async Task WriteToFileAsync3(string fileName, ICollection<Book> students)
 	{
 		Directory.CreateDirectory("output");
 		string path = Path.Combine("output", $"{fileName}.txt");
 		StringBuilder contents = new StringBuilder();
 
-		foreach (Student student in students)
+		foreach (Book student in students)
 		{
 			contents.AppendLine($"{student.Name}\t{student.Average}");
 		}
