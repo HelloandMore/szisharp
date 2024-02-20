@@ -3,13 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_01_FileRead</RootNamespace>
+    <RootNamespace>_02_FileRead</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="source\" />
+    <Folder Include="Source\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,13 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Custom.Library">
-      <HintPath>..\..\..\06 - Egydimenzios Tombok\Tombok_Solution\Custom.Library\obj\Debug\net8.0\Custom.Library.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="source\adatok.txt">
+    <None Update="Source\adatok.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

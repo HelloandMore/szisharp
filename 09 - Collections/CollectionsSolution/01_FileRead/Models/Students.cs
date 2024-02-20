@@ -1,11 +1,11 @@
-﻿public class Student
+﻿public class Book
 {
 	public string Name { get; set; }
 	public double Average { get; set; }
 
-	public Student() { }
+	public Book() { }
 
-	public Student(string name, double average)	{
+	public Book(string name, double average)	{
 		Name = name;
 		Average = average;
 	}
