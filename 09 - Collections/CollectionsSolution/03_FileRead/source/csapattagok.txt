@@ -1,3 +1,5 @@
+Csapatok és játékosok:
+
 Imoco Volley: Katarzyna Skowrońska-Dolata, Bodnár Dorottya, Naz Aydemir
 AGIL Volley: Agnieszka Bednarek-Kasza, Malgorzata Glinka-Mogentale, Cristina Chirichella
 Linemár Békéscsaba: Eleonora Dziękiewicz, Martina Guiggi, Tandara Caixeta
@@ -10,3 +12,5 @@ Fenerbahçe Acibadem: Tanja Matic, Marianne Steinbrecher, Debby Stam-Pilon
 Asystel Novara: Robin de Kruijf, Lioubov Sokolova Kiliç, Sabina Altynbekova
 Besiktas: Charlotte Leys, Lise Van Hecke, Anja Spasojevic
 FATUM Nyíregyháza: Nikola Radosová
+
+

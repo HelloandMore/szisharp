@@ -1,3 +1,5 @@
+Nemzetiségek és a játékosok száma:
+
 lengyel: 5
 olasz: 3
 brazil: 4
