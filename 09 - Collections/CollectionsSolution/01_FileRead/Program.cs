@@ -1,6 +1,9 @@
 ﻿using Custom.Library.SystemExtensions;
 using System;
 
+<<<<<<< HEAD
+List<Student> students = await FileService.ReadFromFileAsync("adatok.txt");
+=======
 List<Book> students = await FileService.ReadFromFileAsync("adatok.txt");
 
 
@@ -63,3 +66,4 @@ sumOfRatings.WriteToConsole();
 
 //8 - Készítsünk egy osztályátlag.txt állományt, melybe az osztály átlagát írjuk ki!
 await FileService.WriteToFileAsync2("osztalyAtlag", new List<Book> { new Book { Name = "osztályátlag", Average = average } });
+>>>>>>> 537cfaefd60d915437e4c4f787a590bef60a9eb8
