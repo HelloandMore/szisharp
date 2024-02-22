@@ -1,0 +1,28 @@
+A roplabda.txt állományban az adatok a következő módón vannak tárolva:
+Név,
+Magasság,
+Poszt,
+Nemzetiség,
+Csapat,
+Ország (ahol a csapat játszik)
+
+1 - Írjuk ki a képernyőre az össz adatot
+2 - Keressük ki az ütő játékosokat az utok.txt állömányba
+3 - A csapattagok.txt állományba mentsük a csapatokat és a hozzájuk tartozó játékosokat
+    a következő formában:
+  Telekom Baku: Yelizaveta Mammadova,Yekaterina Gamova,
+4 - Rendezzük a játékosokat magasság szerint növekvő sorrendbe és a 
+    magaslatok.txt állományba mentsük el.
+5 - Mutassuk be a nemzetisegek.txt állományba, hogy mely nemzetiségek képviseltetik
+    magukat a röplabdavilágban mint játékosok és milyen számban.
+6 - atlagnalmagasabbak.txt állományba keressük azon játékosok nevét és magasságát
+    akik magasabbak mint az „adatbázisban” szereplő játékosok átlagos magasságánál.
+7 - Állítsa növekvő sorrendbe a posztok szerint a játékosok ösz magasságát
+8 - Egy szöveges állományba, „alacsonyak.txt” keresse ki a játékosok átlagmagasságától
+    alacsonyabb játékosokat. Az állomány tartalmazza a játékosok nevét,
+    magasságát és hogy mennyivel alacsonyabbak az átlagnál, 2 tizedes pontossággal.
+
+
+
+
+

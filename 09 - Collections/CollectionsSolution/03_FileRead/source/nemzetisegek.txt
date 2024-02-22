@@ -1,0 +1,12 @@
+lengyel: 5
+olasz: 3
+brazil: 4
+azer: 2
+magyar: 3
+szerb: 5
+holland: 2
+orosz: 2
+amerikai: 2
+török: 3
+belga: 2
+szlovák: 1

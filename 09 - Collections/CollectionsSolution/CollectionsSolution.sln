@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_FileRead", "01_FileRead\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Custom.Library", "Custom.Library\Custom.Library.csproj", "{E0DAC129-0712-4C19-84A1-A8E12FCD9363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_FileRead", "02_FileRead\02_FileRead.csproj", "{49833AC8-30B0-4649-8D0A-918981067B01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_FileRead", "02_FileRead\02_FileRead.csproj", "{49833AC8-30B0-4649-8D0A-918981067B01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_FileRead", "03_FileRead\03_FileRead.csproj", "{06476242-702A-47B4-89E1-D62538752F3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{49833AC8-30B0-4649-8D0A-918981067B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49833AC8-30B0-4649-8D0A-918981067B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49833AC8-30B0-4649-8D0A-918981067B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06476242-702A-47B4-89E1-D62538752F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06476242-702A-47B4-89E1-D62538752F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06476242-702A-47B4-89E1-D62538752F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06476242-702A-47B4-89E1-D62538752F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

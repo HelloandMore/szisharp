@@ -1,0 +1,6 @@
+Olaszország: 6
+Magyarország: 7
+Szerbia: 6
+Azerbajdzsán: 6
+Törökország: 6
+Lengyelország: 3

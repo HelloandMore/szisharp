@@ -1,0 +1,34 @@
+Katarzyna Skowrońska-Dolata	189	ütő	lengyel	Imoco Volley	Olaszország
+Agnieszka Bednarek-Kasza	185	sánc	lengyel	AGIL Volley	Olaszország
+Eleonora Dziękiewicz	185	sánc	lengyel	Linemár Békéscsaba	Magyarország
+Anna Werblińska	178	feladó	lengyel	Fatum Nyíregyháza	Magyarország
+Francesca Piccinini	184	ütő	olasz	Partizan	Szerbia
+Jaqueline Carvalho	186	ütő	brazil	Crvena Zvezda	Szerbia
+Yelizaveta Mammadova	184	fogató	azer	Telekom Baku	Azerbajdzsán
+Szpin Renáta	165	liberó	magyar	Rabita Baku	Azerbajdzsán
+Tanja Matic	178	fogató	szerb	Fenerbahçe Acibadem	Törökország
+Robin de Kruijf	193	ütő	holland	Asystel Novara	Lengyelország
+Bodnár Dorottya	185	ütő	magyar	Imoco Volley	Olaszország
+Malgorzata Glinka-Mogentale	191	ütő	lengyel	AGIL Volley	Olaszország
+Martina Guiggi	188	sánc	olasz	Linemár Békéscsaba	Magyarország
+Jovana Brakocevic	196	ütő	szerb	Fatum Nyíregyháza	Magyarország
+Milena Rašic	193	sánc	szerb	Partizan	Szerbia
+Ivana Đerisilo	185	ütő	szerb	Crvena Zvezda	Szerbia
+Yekaterina Gamova	202	ütő	orosz	Telekom Baku	Azerbajdzsán
+Logan Tom	186	ütő	amerikai	Rabita Baku	Azerbajdzsán
+Marianne Steinbrecher	188	ütő	brazil	Fenerbahçe Acibadem	Törökország
+Lioubov Sokolova Kiliç	192	ütő	orosz	Asystel Novara	Lengyelország
+Tálas Zsuzsanna	178	feladó	magyar	Partizan	Szerbia
+Gabrielle Reece	191	ütő	amerikai	Crvena Zvezda	Szerbia
+Thaísa Menezes	196	ütő	brazil	Fatum Nyíregyháza	Magyarország
+Gözde Kirdar Sonsirma	183	fogató	török	Telekom Baku	Azerbajdzsán
+Tandara Caixeta	184	fogató	brazil	Linemár Békéscsaba	Magyarország
+Neslihan Demir	187	fogató	török	Rabita Baku	Azerbajdzsán
+Cristina Chirichella	195	ütő	olasz	AGIL Volley	Olaszország
+Debby Stam-Pilon	184	sánc	holland	Fenerbahçe Acibadem	Törökország
+Naz Aydemir	186	fogató	török	Imoco Volley	Olaszország
+Sabina Altynbekova	182	fogató	azer	Asystel Novara	Lengyelország
+Charlotte Leys	184	fogató	belga	Besiktas	Törökország
+Lise Van Hecke	191	fogató	belga	Besiktas	Törökország
+Anja Spasojevic	191	fogató	szerb	Besiktas	Törökország
+Nikola Radosová	186	ütő	szlovák	FATUM Nyíregyháza	Magyarország

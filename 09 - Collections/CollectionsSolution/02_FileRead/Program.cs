@@ -23,18 +23,9 @@ FileService.WriteCollectionToFile("sorbarakott", booksByPageCount);
 // Thriller:
 //-könnyv1
 //- könnyv2
-//Krimi:
+// Krimi:
 //-könnyv1
 //- könnyv2
 
-Dictionary<string, List<Books>> booksByTopic = books.GroupBy(x => x.Topic).ToDictionary(x => x.Key, x => x.ToList());
-List<string> data = new List<string>();
-foreach (var item in booksByTopic)
-{
-	data.Add($"{item.Key}:");
-	foreach (var book in item.Value)
-	{
-		data.Add($"- {book}");
-	}
-}
-FileService.WriteCollectionToFileString("kategoriak", data);
+Dictionary<string, List<string>> booksByTopic = books.GroupBy(x => x.Topic).ToDictionary(x => x.Key, x => x.Select(x => x.Title).ToList());
+FileService.WriteCollectionToFileString("kategoriak", booksByTopic);

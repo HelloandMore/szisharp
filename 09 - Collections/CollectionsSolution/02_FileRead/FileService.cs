@@ -40,38 +40,37 @@
 	}
 	#endregion
 	#region File Write
-	public static async Task WriteCollectionToFile(string fileName, ICollection<Books> books)
+	public static void WriteCollectionToFile(string fileName, ICollection<Books> books)
 	{
 		Directory.CreateDirectory("output");
 		string path = Path.Combine("output", $"{fileName}.txt");
 		List<string> data = new List<string>();
-
-		using FileStream fs = new FileStream(path, FileMode.CreateNew, FileAccess.Write, FileShare.None, 128);
-		using StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
 
 		foreach (Books book in books)
 		{
 			data.Add($"{book}");
 		}
 
-		File.WriteAllLinesAsync(path, data, Encoding.UTF8);
+		File.WriteAllLines(path, data, Encoding.UTF8);
 	}
 
-	public static async Task WriteCollectionToFileString(string fileName, ICollection<string> books)
+	public static void WriteCollectionToFileString(string fileName, Dictionary<string, List<string>> booksByTopic)
 	{
 		Directory.CreateDirectory("output");
 		string path = Path.Combine("output", $"{fileName}.txt");
-		List<string> data = new List<string>();
 
-		using FileStream fs = new FileStream(path, FileMode.CreateNew, FileAccess.Write, FileShare.None, 128);
-		using StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
+		StringBuilder sb = new StringBuilder();
 
-		foreach (String book in books)
+		foreach (var item in booksByTopic)
 		{
-			data.Add($"{book}");
+			sb.AppendLine($"{item.Key}:");
+			foreach (var title in item.Value)
+			{
+				sb.AppendLine($"\t- {title}");
+			}
 		}
 
-		File.WriteAllLinesAsync(path, data, Encoding.UTF8);
+		File.WriteAllText(path, sb.ToString(), Encoding.UTF8);
 	}
 	#endregion
 }
