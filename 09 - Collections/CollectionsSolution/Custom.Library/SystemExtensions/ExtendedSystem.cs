@@ -12,7 +12,7 @@ public static class ExtendedSystem
 	
 	public static void WriteCollectionToConsole<T>(this ICollection<T> collectionToDisplay) where T : class
 	{
-		foreach (object item in collectionToDisplay)
+		foreach (T item in collectionToDisplay)
 		{
 			Console.WriteLine(item);
 		}
