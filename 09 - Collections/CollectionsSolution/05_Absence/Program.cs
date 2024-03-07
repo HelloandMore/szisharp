@@ -18,19 +18,7 @@
 //1.Tárolja el a fájlok tartalmát olyan adatszerkezetben, amivel a további feladatok megoldhatók!
 using IOLibrary;
 
-List<Absence> absences = new List<Absence>();
-foreach (var item in FileService.ReadFile("szeptember.csv"))
-{
-    string[] data = item.Split(';');
-	absences.Add(new Absence
-    {
-		Name = data[0],
-		Class = data[1],
-		FirstDay = int.Parse(data[2]),
-		LastDay = int.Parse(data[3]),
-		Hours = int.Parse(data[4])
-	});
-}
+List<Absence> absences = await FileService.ReadFromFileAsyncV2("szeptember.csv");
 
 //2. Határozza meg, és írja ki a képernyőre, hogy a diákok összesen hány órát mulasztottak ebben a hónapban.
 Console.WriteLine($"A diákok összesen {absences.Sum(x => x.Hours)} órát mulasztottak.");
@@ -47,7 +35,7 @@ bool absence = absences.Any(x => x.Name.ToLower() == name.ToLower() && x.FirstDa
 Console.WriteLine(absence ? "A tanuló hiányzott szeptemberben" : "A tanuló nem hiányzott szeptemberben");
 
 //5. Írja ki a képernyőre azon tanulók nevét és osztályát a minta szerint, akik a 3. feladatban bekért napon hiányoztak! (Ha a 3. feladatot nem tudta megoldani, akkor a 19-ei nappal dolgozzon!) Ha nem volt hiányzó, akkor a „Nem volt hiányzó” szöveget jelenítse meg!
-Console.WriteLine($"Hiányzók 2017.09.{day}.-én:");
+Console.WriteLine($"Hiányzók 2017.09.{day}.-án/én:");
 var result = absences.Where(x => x.FirstDay <= day && x.LastDay >= day).ToList();
 if (result.Count == 0)
 {
@@ -62,11 +50,9 @@ else
 }
 
 //6. Készítsen összesítést, amely osztályonként fájlba írja a mulasztott órák számát! Az osszesites.csv nevű fájl tartalmazza az osztályt és a mulasztott órák számának összegét!
-StreamWriter sw = new StreamWriter("osszesites.csv");
-sw.WriteLine("Osztály;Mulasztott órák");
-var result2 = absences.GroupBy(x => x.Class).Select(x => new { Osztaly = x.Key, Mulasztott = x.Sum(y => y.Hours) });
-foreach (var item in result2)
+List<Absence> absences1 = absences.GroupBy(x => x.Class).Select(x => new Absence
 {
-    sw.WriteLine($"{item.Osztaly};{item.Mulasztott}");
-}
-sw.Close();
+	Class = x.Key,
+	Hours = x.Sum(x => x.Hours)
+}).ToList();
+FileService.WriteCollectionToFile("osszesites", absences1);

@@ -2,29 +2,29 @@
 
 public static class FileService
 {
-	public static void WriteCollectionToFile<T>(string fileName, ICollection<T> absences) where T : class
+	public static void WriteCollectionToFile<T>(string fileName, ICollection<T> players) where T : class
 	{
 		Directory.CreateDirectory("output");
 		string path = Path.Combine("output", $"{fileName}.csv");
 
 		StringBuilder sb = new StringBuilder();
 
-		foreach (var absence in absences)
+		foreach (var player in players)
 		{
-			sb.AppendLine(absence.ToString());
+			sb.AppendLine(player.ToString());
 		}
 
 		File.WriteAllText(path, sb.ToString(), Encoding.UTF8);
 	}
 
-	public static void WriteCollectionToFileString(string fileName, Dictionary<string, List<string>> absences)
+	public static void WriteCollectionToFileString(string fileName, Dictionary<string, List<string>> players)
 	{
 		Directory.CreateDirectory("output");
 		string path = Path.Combine("output", $"{fileName}.csv");
 
 		StringBuilder sb = new StringBuilder();
 
-		foreach (var item in absences)
+		foreach (var item in players)
 		{
 			sb.AppendLine($"{item.Key}:");
 			foreach (var name in item.Value)
@@ -36,10 +36,10 @@ public static class FileService
 		File.WriteAllText(path, sb.ToString(), Encoding.UTF8);
 	}
 
-	public static async Task<List<Absence>> ReadFromFileAsyncV2(string fileName)
+	public static async Task<List<Player>> ReadFromFileAsync(string fileName)
 	{
-		List<Absence> absents = new List<Absence>();
-		Absence absent = null;
+		List<Player> players = new List<Player>();
+		Player player = null;
 		string[] data = null;
 
 
@@ -51,16 +51,18 @@ public static class FileService
 		foreach (string line in lines.Skip(1))
 		{
 			data = line.Split(";");
-			absent = new Absence();
-			absent.Name = data[0];
-			absent.Class = data[1];
-			absent.FirstDay = int.Parse(data[2]);
-			absent.LastDay = int.Parse(data[3]);
-			absent.Hours = int.Parse(data[4]);
+			player = new Player
+			{
+				Name = data[0],
+				FirstTime = DateTime.Parse(data[1]),
+				LastTime = DateTime.Parse(data[2]),
+				Weight = int.Parse(data[3]),
+				Height = int.Parse(data[4])
+			};
 
-			absents.Add(absent);
+			players.Add(player);
 		}
 
-		return absents;
+		return players;
 	}
 }
