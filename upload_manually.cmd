@@ -10,7 +10,7 @@ if not %errorlevel%==0 (goto :error)
 
 git push
 timeout 5 /nobreak
-exit /b
+exit /b
 
 :error
 echo.
