@@ -2,13 +2,21 @@
 pushd %~0\..
 set /p comment="Add meg a commentet > "
 
+@echo on
 git add .
-if not %errorlevel%==0 (goto :error)
+set adderr=%errorlevel%
+@echo off
+if not %adderr%==0 (goto :error)
 
+@echo on
 git commit -m "%date% - %comment%"
-if not %errorlevel%==0 (goto :error)
+set commiterr=%errorlevel%
+@echo off
+if not %commiter%==0 (goto :error)
 
+@echo on
 git push
+@echo off
 timeout 5 /nobreak
 exit /b
 
