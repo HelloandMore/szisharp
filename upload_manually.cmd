@@ -18,7 +18,7 @@ if not %commiterr%==0 (goto :error)
 git push
 @echo off
 timeout 5 /nobreak
-exit /b
+exit /b
 
 :error
 echo.

@@ -6,7 +6,7 @@
 // A feladat megoldásához használjon LINQ-t és .net8-as C#-t
 
 //1. Írjuk ki a képernyőre az össz adatot.
-List<Lottery> lotteries = await FileService.GetLotteriesAsync("lotto.txt");
+
 
 //2. Random számok segítségével generáljuk le a napi 7 nyerő számot és írjuk őket egy szöveges állományba melynek az aktuális nap lesz a neve.
 

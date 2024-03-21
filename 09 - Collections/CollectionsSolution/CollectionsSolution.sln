@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Lottery", "04_Lottery\04
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Absence", "05_Absence\05_Absence.csproj", "{87A598E4-1F8C-48A7-8C4D-C24653F9AA4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Lefthanded", "06_Lefthanded\06_Lefthanded.csproj", "{9C695AA3-01B6-4489-A63D-41E45F9F5B5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_Lefthanded", "06_Lefthanded\06_Lefthanded.csproj", "{9C695AA3-01B6-4489-A63D-41E45F9F5B5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Danceorder", "07_Danceorder\07_Danceorder.csproj", "{D411E4EE-15DF-4BDA-9745-C46CC1943EDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{9C695AA3-01B6-4489-A63D-41E45F9F5B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C695AA3-01B6-4489-A63D-41E45F9F5B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C695AA3-01B6-4489-A63D-41E45F9F5B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D411E4EE-15DF-4BDA-9745-C46CC1943EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D411E4EE-15DF-4BDA-9745-C46CC1943EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D411E4EE-15DF-4BDA-9745-C46CC1943EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D411E4EE-15DF-4BDA-9745-C46CC1943EDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
