@@ -12,7 +12,7 @@ if not %adderr%==0 (goto :error)
 git commit -m "%date% - %comment%"
 set commiterr=%errorlevel%
 @echo off
-if not %commiter%==0 (goto :error)
+if not %commiterr%==0 (goto :error)
 
 @echo on
 git push
