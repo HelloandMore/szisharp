@@ -1,0 +1,13 @@
+﻿global using FluentValidation;
+global using FluentValidation.AspNetCore;
+global using FluentValidation.Results;
+global using Microsoft.AspNetCore.Builder;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.DependencyInjection;
+global using Solution.Common.Models;
+global using Solution.Common.Models.Exceptions;
+global using System.Reflection;
+global using System.Text.Json;
+global using System.Text.RegularExpressions;
+global using Solution.Common.Enums;
+global using Solution.Common.Models.Constants;

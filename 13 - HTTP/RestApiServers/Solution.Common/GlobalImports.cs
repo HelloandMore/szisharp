@@ -1,0 +1,11 @@
+﻿global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Mvc.ModelBinding;
+global using Serilog;
+global using Solution.Common.Interfaces;
+global using Solution.Common.Logger;
+global using System.Net;
+global using System.Security.Claims;
+global using System.Text.Json;
+global using System.Text.Json.Serialization;
+global using Solution.Common.Enums;
