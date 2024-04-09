@@ -4,7 +4,7 @@ public abstract class BaseService<T, TKey> : IBaseService<T, TKey> where T : cla
 {
     protected List<T> Items { get; set; } = new List<T>();
 
-    public abstract void Create(T model);
+    public abstract T Create(T model);
 
     public abstract void Delete(TKey id);
 

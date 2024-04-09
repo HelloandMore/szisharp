@@ -1,19 +1,16 @@
 ﻿namespace HttpServices;
 
-public abstract class BaseService
+public class BaseService
 {
-    protected HttpClient httpClient;
+    private static HttpClient httpClient;
     private static JsonSerializerOptions options;
-    private const string baseURL = "";
-
-    protected BaseService()
-    {
-        this.httpClient = new HttpClient();
-        SetHeaders();
-    }
+    private const string baseURL = "https://localhost:5000";
 
     static BaseService()
     {
+        httpClient = new HttpClient();
+        SetHeaders();
+
         options = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
@@ -28,7 +25,7 @@ public abstract class BaseService
     /// <param name="route">The route part without the base url</param>
     /// <returns></returns>
     /// <exception cref="Exception"></exception>
-    protected async Task<TResponse> SendGetRequestAsync<TResponse>(string route)
+    public static async Task<TResponse> SendGetRequestAsync<TResponse>(string route)
     {
         try
         {
@@ -54,7 +51,7 @@ public abstract class BaseService
     /// <param name="routParam">Rout parameter</param>
     /// <returns></returns>
     /// <exception cref="Exception"></exception>
-    protected async Task<TResponse> SendGetRequestAsync<TResponse>(string route, object routParam)
+    public static async Task<TResponse> SendGetRequestAsync<TResponse>(string route, object routParam)
     {
         try
         {
@@ -79,12 +76,20 @@ public abstract class BaseService
     /// <param name="routParam">Rout parameter</param>
     /// <returns></returns>
     /// <exception cref="Exception"></exception>
-    protected async Task SendDeleteRequestAsync(string route, object routParam)
+    public static async Task<bool> SendDeleteRequestAsync(string route, object routParam)
     {
-        var uri = BuildUri(route, routParam);
-
-        var response = await httpClient.DeleteAsync(uri);
-        response.EnsureSuccessStatusCode();
+        try
+        {
+            var uri = BuildUri(route, routParam);
+    
+            var response = await httpClient.DeleteAsync(uri);
+            response.EnsureSuccessStatusCode();
+            return true;
+        }
+        catch(Exception ex)
+        {
+            return false;
+        }
     }
 
     /// <summary>
@@ -93,7 +98,7 @@ public abstract class BaseService
     /// <param name="route">The route part without the base url</param>
     /// <param name="body">The request body object</param>
     /// <returns></returns>
-    protected async Task<bool> SendPostRequestAsync(string route, object body)
+    public static async Task<bool> SendPostRequestAsync(string route, object body)
     {
         try
         {
@@ -116,7 +121,7 @@ public abstract class BaseService
     /// <param name="route">The route part without the base url</param>
     /// <param name="body">The request body object</param>
     /// <returns></returns>
-    protected async Task<TResponse> SendPostRequestAsync<TResponse>(string route, object body)
+    public static async Task<TResponse> SendPostRequestAsync<TResponse>(string route, object body)
     {
         try
         {
@@ -140,7 +145,7 @@ public abstract class BaseService
     /// <param name="route">The route part without the base url</param>
     /// <param name="body">The request body object</param>
     /// <returns></returns>
-    protected async Task<bool> SendPatchRequestAsync(string route)
+    public static async Task<bool> SendPatchRequestAsync(string route)
     {
         try
         {
@@ -163,7 +168,7 @@ public abstract class BaseService
     /// <param name="route">The route part without the base url</param>
     /// <param name="body">The request body object</param>
     /// <returns></returns>
-    protected async Task SendPutRequestAsync(string route, object body)
+    public static async Task SendPutRequestAsync(string route, object body)
     {
         var request = BuildRequestMessage(HttpMethod.Put, route, body);
 
@@ -177,7 +182,7 @@ public abstract class BaseService
     /// <param name="route">The route part without the base url</param>
     /// <param name="body">The request body object</param>
     /// <returns></returns>
-    protected async Task<TResponse> SendPatchRequestAsync<TResponse>(string route, object body)
+    public static async Task<TResponse> SendPatchRequestAsync<TResponse>(string route, object body)
     {
         try
         {
@@ -201,7 +206,7 @@ public abstract class BaseService
     /// <param name="route">The route part without the base url</param>
     /// <param name="body">The request body object</param>
     /// <returns></returns>
-    protected async Task<bool> SendPatchRequestAsync(string route, object body)
+    public static async Task<bool> SendPatchRequestAsync(string route, object body)
     {
         var request = BuildRequestMessage(HttpMethod.Patch, route, body);
 
@@ -222,30 +227,30 @@ public abstract class BaseService
     /// <param name="url">The URL of the server</param>
     /// <param name="streamContent">Stream content of the file to be uploaded</param>
     /// <returns></returns>
-    protected async Task<bool> UploadFileAsync(string url, StreamContent streamContent)
+    public static async Task<bool> UploadFileAsync(string url, StreamContent streamContent)
     {
-        this.httpClient.DefaultRequestHeaders.Clear();
+        httpClient.DefaultRequestHeaders.Clear();
         var response = await httpClient.PutAsync(url, streamContent);
 
         return response.IsSuccessStatusCode;
     }
 
-    private void SetHeaders()
+    private static void SetHeaders()
     {
-        this.httpClient.BaseAddress ??= new Uri(baseURL);
+        httpClient.BaseAddress ??= new Uri(baseURL);
 
         if (!httpClient.DefaultRequestHeaders.Any())
         {
-            this.httpClient.DefaultRequestHeaders.Add("Cache-Control", "no-cache");
-            this.httpClient.DefaultRequestHeaders.Add("Accept-Encoding", "gzip, deflate, br");
+            httpClient.DefaultRequestHeaders.Add("Cache-Control", "no-cache");
+            httpClient.DefaultRequestHeaders.Add("Accept-Encoding", "gzip, deflate, br");
 
-            this.httpClient.DefaultRequestHeaders.Accept.Clear();
-            this.httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("plain/text"));
-            this.httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            httpClient.DefaultRequestHeaders.Accept.Clear();
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("plain/text"));
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
     }
 
-    private HttpRequestMessage BuildRequestMessage(HttpMethod httpMethod, string route, object body)
+    private static HttpRequestMessage BuildRequestMessage(HttpMethod httpMethod, string route, object body)
     {
         return new HttpRequestMessage
         {
@@ -257,11 +262,11 @@ public abstract class BaseService
         };
     }
 
-    private Uri BuildUri(string route) => new Uri($"{baseURL}/{route}");
+    private static Uri BuildUri(string route) => new Uri($"{baseURL}/{route}");
 
-    private Uri BuildUri(string route, object routParam) => new Uri($"{baseURL}/{route}/{routParam}");
+    private static Uri BuildUri(string route, object routParam) => new Uri($"{baseURL}/{route}/{routParam}");
 
-    protected virtual async Task<T> SerializeResponseAsync<T>(HttpContent content)
+    public static async Task<T> SerializeResponseAsync<T>(HttpContent content)
     {
         var encoding = content.Headers.ContentEncoding.FirstOrDefault();
         var responseStream = await content.ReadAsStreamAsync();

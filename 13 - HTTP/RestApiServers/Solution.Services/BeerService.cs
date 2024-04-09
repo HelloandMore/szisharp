@@ -4,14 +4,17 @@ public class BeerService : BaseService<Beer, int>, IBeerService<Beer, int>
 {
     public BeerService() : base()
     {
-        this.Items = ReadDataFromUrlAsync("https://api.sampleapis.com/beers/ale").Result;
+        this.Items = ReadDataFromJson("beers.json");
     }
 
-    public override void Create(Beer model)
+    public override Beer Create(Beer model)
     {
         model.Id = Items.Last().Id + 1;
         Items.Add(model);
+
+        return model;
     }
+
 
     public override void Delete(int id)
     {
@@ -36,6 +39,6 @@ public class BeerService : BaseService<Beer, int>, IBeerService<Beer, int>
         var item = GetById(model.Id);
         int index = Items.IndexOf(item);
         Items.RemoveAt(index);
-        Items.Insert(index, item);
+        Items.Insert(index, model);
     }
 }

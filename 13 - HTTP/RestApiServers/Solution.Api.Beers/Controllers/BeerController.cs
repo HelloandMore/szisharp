@@ -43,13 +43,12 @@ public partial class BeerController(IBeerService<Beer, int> service) : Controlle
     [Route("/api/beer/create")]
     [SwaggerOperation(OperationId = "create")]
     [Produces("application/json")]
-    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(bool))]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(Beer))]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Beer requestParam)
     {
-        service.Create(requestParam);
-        return Ok(await Task.FromResult(true));
-    }
+		return Ok(service.Create(requestParam));
+	}
 
     [HttpPut]
     [Route("/api/beer/update")]
@@ -59,7 +58,7 @@ public partial class BeerController(IBeerService<Beer, int> service) : Controlle
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Update([FromBody][Required] Beer requestParam)
     {
-        service.Create(requestParam);
+        service.Update(requestParam);
         return Ok(await Task.FromResult(true));
     }
 }

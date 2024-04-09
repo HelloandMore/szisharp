@@ -45,12 +45,11 @@ public partial class PlayerController(IAmazonsOfVolleyballService<Player, int> s
     [Route("/api/player/create")]
     [SwaggerOperation(OperationId = "create")]
     [Produces("application/json")]
-    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(bool))]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(Player))]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Player requestParam)
     {
-        service.Create(requestParam);
-        return Ok(await Task.FromResult(true));
+        return Ok(service.Create(requestParam));
     }
 
     [HttpPut]
@@ -61,7 +60,7 @@ public partial class PlayerController(IAmazonsOfVolleyballService<Player, int> s
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Update([FromBody][Required] Player requestParam)
     {
-        service.Create(requestParam);
+        service.Update(requestParam);
         return Ok(await Task.FromResult(true));
     }
 }

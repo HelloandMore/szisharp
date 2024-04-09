@@ -7,10 +7,12 @@ public class GameServiceService : BaseService<Game, int>, IGameService<Game, int
         this.Items = ReadDataFromUrlAsync("https://www.mmobomb.com/api1/games").Result;
     }
 
-    public override void Create(Game model)
+    public override Game Create(Game model)
     {
         model.Id = Items.Last().Id + 1;
         Items.Add(model);
+
+        return model;
     }
 
     public override void Delete(int id)
@@ -36,6 +38,6 @@ public class GameServiceService : BaseService<Game, int>, IGameService<Game, int
         var item = GetById(model.Id);
         int index = Items.IndexOf(item);
         Items.RemoveAt(index);
-        Items.Insert(index, item);
+        Items.Insert(index, model);
     }
 }

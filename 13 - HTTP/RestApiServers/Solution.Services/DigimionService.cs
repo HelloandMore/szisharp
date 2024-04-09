@@ -7,10 +7,12 @@ public class DigimonServiceService : BaseService<Digimon, int>, IDigimonServiceS
         this.Items = ReadDataFromUrlAsync("https://digimon-api.vercel.app/api/digimon").Result;
     }
 
-    public override void Create(Digimon model)
+    public override Digimon Create(Digimon model)
     {
         model.Id = Items.Last().Id + 1;
         Items.Add(model);
+
+        return model;
     }
 
     public override void Delete(int id)
@@ -36,6 +38,6 @@ public class DigimonServiceService : BaseService<Digimon, int>, IDigimonServiceS
         var item = GetById(model.Id);
         int index = Items.IndexOf(item);
         Items.RemoveAt(index);
-        Items.Insert(index, item);
+        Items.Insert(index, model);
     }
 }

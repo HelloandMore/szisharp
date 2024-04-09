@@ -7,10 +7,12 @@ public class AmazonsOfVolleyballService : BaseService<Player, int>, IAmazonsOfVo
         this.Items = ReadDataFromJson("amazons_of_volleyball.json");
     }
 
-    public override void Create(Player model)
+    public override Player Create(Player model)
     {
         model.Id = Items.Last().Id + 1;
         Items.Add(model);
+
+        return model;
     }
 
     public override void Delete(int id)
@@ -36,6 +38,6 @@ public class AmazonsOfVolleyballService : BaseService<Player, int>, IAmazonsOfVo
         var item = GetById(model.Id);
         int index = Items.IndexOf(item);
         Items.RemoveAt(index);
-        Items.Insert(index, item);
+        Items.Insert(index, model);
     }
 }

@@ -43,13 +43,12 @@ public partial class LoLChampionController(ILoLChampionService<Champion, int> se
     [Route("/api/lol-champion/create")]
     [SwaggerOperation(OperationId = "create")]
     [Produces("application/json")]
-    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(bool))]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(Champion))]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Champion requestParam)
     {
-        service.Create(requestParam);
-        return Ok(await Task.FromResult(true));
-    }
+		return Ok(service.Create(requestParam));
+	}
 
     [HttpPut]
     [Route("/api/lol-champion/update")]
@@ -59,7 +58,7 @@ public partial class LoLChampionController(ILoLChampionService<Champion, int> se
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Update([FromBody][Required] Champion requestParam)
     {
-        service.Create(requestParam);
+        service.Update(requestParam);
         return Ok(await Task.FromResult(true));
     }
 }

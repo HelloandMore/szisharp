@@ -43,13 +43,12 @@ public partial class DigimonController(IDigimonServiceService<Digimon, int> serv
     [Route("/api/digimon/create")]
     [SwaggerOperation(OperationId = "create")]
     [Produces("application/json")]
-    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(bool))]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(Digimon))]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Digimon requestParam)
     {
-        service.Create(requestParam);
-        return Ok(await Task.FromResult(true));
-    }
+		return Ok(service.Create(requestParam));
+	}
 
     [HttpPut]
     [Route("/api/digimon/update")]
@@ -59,7 +58,7 @@ public partial class DigimonController(IDigimonServiceService<Digimon, int> serv
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Update([FromBody][Required] Digimon requestParam)
     {
-        service.Create(requestParam);
+        service.Update(requestParam);
         return Ok(await Task.FromResult(true));
     }
 }

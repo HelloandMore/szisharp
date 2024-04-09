@@ -51,6 +51,9 @@
     <None Update="Sources\amazons_of_volleyball.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Sources\beers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Sources\lol.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

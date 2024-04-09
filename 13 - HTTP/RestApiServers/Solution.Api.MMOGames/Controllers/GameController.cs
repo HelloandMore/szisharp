@@ -43,13 +43,12 @@ public partial class GameController(IGameService<Game, int> service) : Controlle
     [Route("/api/game/create")]
     [SwaggerOperation(OperationId = "create")]
     [Produces("application/json")]
-    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(bool))]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(Game))]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Game requestParam)
     {
-        service.Create(requestParam);
-        return Ok(await Task.FromResult(true));
-    }
+		return Ok(service.Create(requestParam));
+	}
 
     [HttpPut]
     [Route("/api/game/update")]
@@ -59,7 +58,7 @@ public partial class GameController(IGameService<Game, int> service) : Controlle
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Update([FromBody][Required] Game requestParam)
     {
-        service.Create(requestParam);
+        service.Update(requestParam);
         return Ok(await Task.FromResult(true));
     }
 }

@@ -7,10 +7,12 @@ public class LoLChampionService : BaseService<Champion, int>, ILoLChampionServic
         this.Items = ReadDataFromJson("lol.json");
     }
 
-    public override void Create(Champion model)
+    public override Champion Create(Champion model)
     {
         model.Id = Items.Last().Id + 1;
         Items.Add(model);
+
+        return model;
     }
 
     public override void Delete(int id)
@@ -36,6 +38,6 @@ public class LoLChampionService : BaseService<Champion, int>, ILoLChampionServic
         var item = GetById(model.Id);
         int index = Items.IndexOf(item);
         Items.RemoveAt(index);
-        Items.Insert(index, item);
+        Items.Insert(index, model);
     }
 }
