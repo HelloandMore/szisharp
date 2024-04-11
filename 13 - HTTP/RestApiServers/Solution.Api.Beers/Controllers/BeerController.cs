@@ -47,8 +47,8 @@ public partial class BeerController(IBeerService<Beer, int> service) : Controlle
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Beer requestParam)
     {
-		return Ok(service.Create(requestParam));
-	}
+        return Ok(service.Create(requestParam));
+    }
 
     [HttpPut]
     [Route("/api/beer/update")]

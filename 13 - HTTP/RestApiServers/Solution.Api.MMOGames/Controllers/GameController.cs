@@ -47,8 +47,8 @@ public partial class GameController(IGameService<Game, int> service) : Controlle
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Game requestParam)
     {
-		return Ok(service.Create(requestParam));
-	}
+        return Ok(service.Create(requestParam));
+    }
 
     [HttpPut]
     [Route("/api/game/update")]

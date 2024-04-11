@@ -47,8 +47,8 @@ public partial class LoLChampionController(ILoLChampionService<Champion, int> se
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Champion requestParam)
     {
-		return Ok(service.Create(requestParam));
-	}
+        return Ok(service.Create(requestParam));
+    }
 
     [HttpPut]
     [Route("/api/lol-champion/update")]

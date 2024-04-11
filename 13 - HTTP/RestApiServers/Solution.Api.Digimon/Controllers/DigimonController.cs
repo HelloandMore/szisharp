@@ -47,8 +47,8 @@ public partial class DigimonController(IDigimonServiceService<Digimon, int> serv
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<IActionResult> Create([FromBody][Required] Digimon requestParam)
     {
-		return Ok(service.Create(requestParam));
-	}
+        return Ok(service.Create(requestParam));
+    }
 
     [HttpPut]
     [Route("/api/digimon/update")]

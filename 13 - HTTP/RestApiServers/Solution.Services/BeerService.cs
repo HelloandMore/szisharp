@@ -15,7 +15,6 @@ public class BeerService : BaseService<Beer, int>, IBeerService<Beer, int>
         return model;
     }
 
-
     public override void Delete(int id)
     {
         var item = GetById(id);

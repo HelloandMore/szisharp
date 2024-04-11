@@ -81,9 +81,10 @@ public class BaseService
         try
         {
             var uri = BuildUri(route, routParam);
-    
+
             var response = await httpClient.DeleteAsync(uri);
             response.EnsureSuccessStatusCode();
+
             return true;
         }
         catch(Exception ex)
