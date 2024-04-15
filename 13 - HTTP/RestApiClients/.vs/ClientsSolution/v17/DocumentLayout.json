@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\b1konmil\\Desktop\\13 - HTTP\\RestApiClients\\",
+  "WorkspaceRootPath": "F:\\.suliscuccok\\C#\\13 - HTTP\\RestApiClients\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F2160F3-4D70-441F-904A-61396544D144}|BeerApp\\BeerApp.csproj|c:\\users\\b1konmil\\desktop\\13 - http\\restapiclients\\beerapp\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F2160F3-4D70-441F-904A-61396544D144}|BeerApp\\BeerApp.csproj|f:\\.suliscuccok\\c#\\13 - http\\restapiclients\\beerapp\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F2160F3-4D70-441F-904A-61396544D144}|BeerApp\\BeerApp.csproj|solutionrelative:beerapp\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F2160F3-4D70-441F-904A-61396544D144}|BeerApp\\BeerApp.csproj|c:\\users\\b1konmil\\desktop\\13 - http\\restapiclients\\beerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F2160F3-4D70-441F-904A-61396544D144}|BeerApp\\BeerApp.csproj|solutionrelative:beerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E5B6194-8B63-4373-894C-570153EA5939}|HttpServices\\HttpServices.csproj|c:\\users\\b1konmil\\desktop\\13 - http\\restapiclients\\httpservices\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E5B6194-8B63-4373-894C-570153EA5939}|HttpServices\\HttpServices.csproj|solutionrelative:httpservices\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\b1konmil\\Desktop\\13 - HTTP\\RestApiClients\\BeerApp\\Program.cs",
-              "RelativeDocumentMoniker": "BeerApp\\Program.cs",
-              "ToolTip": "C:\\Users\\b1konmil\\Desktop\\13 - HTTP\\RestApiClients\\BeerApp\\Program.cs",
-              "RelativeToolTip": "BeerApp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T07:07:16.689Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\b1konmil\\Desktop\\13 - HTTP\\RestApiClients\\BeerApp\\Menu.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\13 - HTTP\\RestApiClients\\BeerApp\\Menu.cs",
               "RelativeDocumentMoniker": "BeerApp\\Menu.cs",
-              "ToolTip": "C:\\Users\\b1konmil\\Desktop\\13 - HTTP\\RestApiClients\\BeerApp\\Menu.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\13 - HTTP\\RestApiClients\\BeerApp\\Menu.cs",
               "RelativeToolTip": "BeerApp\\Menu.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAAGIAAAAAAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAqwGgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T05:44:56.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BeerService.cs",
-              "DocumentMoniker": "C:\\Users\\b1konmil\\Desktop\\13 - HTTP\\RestApiClients\\HttpServices\\BeerService.cs",
-              "RelativeDocumentMoniker": "HttpServices\\BeerService.cs",
-              "ToolTip": "C:\\Users\\b1konmil\\Desktop\\13 - HTTP\\RestApiClients\\HttpServices\\BeerService.cs",
-              "RelativeToolTip": "HttpServices\\BeerService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T07:06:01.77Z",
+              "WhenOpened": "2024-04-15T11:56:15.625Z",
               "EditorCaption": ""
             }
           ]
