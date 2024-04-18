@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEB125C-6C47-4EC8-A617-B53B8BDC15A7}|03_Abstraction\\03_Abstraction.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\03_abstraction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEB125C-6C47-4EC8-A617-B53B8BDC15A7}|03_Abstraction\\03_Abstraction.csproj|solutionrelative:03_abstraction\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEB125C-6C47-4EC8-A617-B53B8BDC15A7}|03_Abstraction\\03_Abstraction.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\03_abstraction\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEB125C-6C47-4EC8-A617-B53B8BDC15A7}|03_Abstraction\\03_Abstraction.csproj|solutionrelative:03_abstraction\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEB125C-6C47-4EC8-A617-B53B8BDC15A7}|03_Abstraction\\03_Abstraction.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\03_abstraction\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEB125C-6C47-4EC8-A617-B53B8BDC15A7}|03_Abstraction\\03_Abstraction.csproj|solutionrelative:03_abstraction\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CEB125C-6C47-4EC8-A617-B53B8BDC15A7}|03_Abstraction\\03_Abstraction.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\03_abstraction\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CEB125C-6C47-4EC8-A617-B53B8BDC15A7}|03_Abstraction\\03_Abstraction.csproj|solutionrelative:03_abstraction\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\03_Abstraction\\Program.cs",
+              "RelativeDocumentMoniker": "03_Abstraction\\Program.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\03_Abstraction\\Program.cs",
+              "RelativeToolTip": "03_Abstraction\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:29:10.318Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Truck.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\03_Abstraction\\Truck.cs",
+              "RelativeDocumentMoniker": "03_Abstraction\\Truck.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\03_Abstraction\\Truck.cs",
+              "RelativeToolTip": "03_Abstraction\\Truck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:32:25.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Car.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\03_Abstraction\\Car.cs",
+              "RelativeDocumentMoniker": "03_Abstraction\\Car.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\03_Abstraction\\Car.cs",
+              "RelativeToolTip": "03_Abstraction\\Car.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:31:40.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\03_Abstraction\\Vehicle.cs",
+              "RelativeDocumentMoniker": "03_Abstraction\\Vehicle.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\03_Abstraction\\Vehicle.cs",
+              "RelativeToolTip": "03_Abstraction\\Vehicle.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:29:37.776Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
