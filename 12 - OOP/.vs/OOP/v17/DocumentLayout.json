@@ -1,0 +1,174 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\alberlet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\alberlet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\lakas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\lakas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\berelheto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\berelheto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\ingatlan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\ingatlan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\hazmester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\hazmester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\tarsashaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\tarsashaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\csaladiapartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\csaladiapartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|j:\\.c#\\.fork\\szisharp\\12 - oop\\04_06_ingatlan\\garazs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF802E9-7E34-44CA-8BC2-FC42EA28A1B0}|04_06_Ingatlan\\04_06_Ingatlan.csproj|solutionrelative:04_06_ingatlan\\garazs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Program.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\Program.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Program.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:01:22.705Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ingatlan.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Ingatlan.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\Ingatlan.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Ingatlan.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\Ingatlan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:01:55.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Berelheto.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Berelheto.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\Berelheto.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Berelheto.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\Berelheto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:02:35.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lakas.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Lakas.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\Lakas.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Lakas.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\Lakas.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:03:55.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Alberlet.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Alberlet.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\Alberlet.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Alberlet.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\Alberlet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:04:44.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hazmester.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Hazmester.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\Hazmester.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Hazmester.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\Hazmester.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:11:23.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tarsashaz.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Tarsashaz.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\Tarsashaz.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Tarsashaz.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\Tarsashaz.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:10:47.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CsaladiApartman.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\CsaladiApartman.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\CsaladiApartman.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\CsaladiApartman.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\CsaladiApartman.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:06:28.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Garazs.cs",
+              "DocumentMoniker": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Garazs.cs",
+              "RelativeDocumentMoniker": "04_06_Ingatlan\\Garazs.cs",
+              "ToolTip": "J:\\.C#\\.fork\\szisharp\\12 - OOP\\04_06_Ingatlan\\Garazs.cs",
+              "RelativeToolTip": "04_06_Ingatlan\\Garazs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T07:07:52.538Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
