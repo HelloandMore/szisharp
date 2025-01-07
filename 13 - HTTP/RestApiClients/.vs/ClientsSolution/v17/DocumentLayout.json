@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\.suliscuccok\\C#\\13 - HTTP\\RestApiClients\\",
+  "WorkspaceRootPath": "D:\\C#\\13 - HTTP\\RestApiClients\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F2160F3-4D70-441F-904A-61396544D144}|BeerApp\\BeerApp.csproj|f:\\.suliscuccok\\c#\\13 - http\\restapiclients\\beerapp\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F2160F3-4D70-441F-904A-61396544D144}|BeerApp\\BeerApp.csproj|d:\\c#\\13 - http\\restapiclients\\beerapp\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F2160F3-4D70-441F-904A-61396544D144}|BeerApp\\BeerApp.csproj|solutionrelative:beerapp\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5B6194-8B63-4373-894C-570153EA5939}|HttpServices\\HttpServices.csproj|d:\\c#\\13 - http\\restapiclients\\httpservices\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5B6194-8B63-4373-894C-570153EA5939}|HttpServices\\HttpServices.csproj|solutionrelative:httpservices\\beerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +24,26 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Menu.cs",
-              "DocumentMoniker": "F:\\.suliscuccok\\C#\\13 - HTTP\\RestApiClients\\BeerApp\\Menu.cs",
+              "DocumentMoniker": "D:\\C#\\13 - HTTP\\RestApiClients\\BeerApp\\Menu.cs",
               "RelativeDocumentMoniker": "BeerApp\\Menu.cs",
-              "ToolTip": "F:\\.suliscuccok\\C#\\13 - HTTP\\RestApiClients\\BeerApp\\Menu.cs",
+              "ToolTip": "D:\\C#\\13 - HTTP\\RestApiClients\\BeerApp\\Menu.cs",
               "RelativeToolTip": "BeerApp\\Menu.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAqwGgAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T11:56:15.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BeerService.cs",
+              "DocumentMoniker": "D:\\C#\\13 - HTTP\\RestApiClients\\HttpServices\\BeerService.cs",
+              "RelativeDocumentMoniker": "HttpServices\\BeerService.cs",
+              "ToolTip": "D:\\C#\\13 - HTTP\\RestApiClients\\HttpServices\\BeerService.cs",
+              "RelativeToolTip": "HttpServices\\BeerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwBQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T05:19:02.576Z",
               "EditorCaption": ""
             }
           ]

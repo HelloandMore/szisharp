@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF2FCAF-6717-453E-833B-C197810306AB}|Diary.ConsoleApp\\Diary.ConsoleApp.csproj|f:\\.suliscuccok\\c#\\ikt\\05 i guess\\kretas hazi\\diary.consoleapp\\dbfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF2FCAF-6717-453E-833B-C197810306AB}|Diary.ConsoleApp\\Diary.ConsoleApp.csproj|solutionrelative:diary.consoleapp\\dbfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62760BE9-4829-4362-9DDF-F06CE4ED1A41}|Diary.Database\\Diary.Database.csproj|f:\\.suliscuccok\\c#\\ikt\\05 i guess\\kretas hazi\\diary.database\\entites\\subjectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62760BE9-4829-4362-9DDF-F06CE4ED1A41}|Diary.Database\\Diary.Database.csproj|solutionrelative:diary.database\\entites\\subjectentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62760BE9-4829-4362-9DDF-F06CE4ED1A41}|Diary.Database\\Diary.Database.csproj|f:\\.suliscuccok\\c#\\ikt\\05 i guess\\kretas hazi\\diary.database\\entites\\studententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62760BE9-4829-4362-9DDF-F06CE4ED1A41}|Diary.Database\\Diary.Database.csproj|solutionrelative:diary.database\\entites\\studententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62760BE9-4829-4362-9DDF-F06CE4ED1A41}|Diary.Database\\Diary.Database.csproj|f:\\.suliscuccok\\c#\\ikt\\05 i guess\\kretas hazi\\diary.database\\entites\\addressentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62760BE9-4829-4362-9DDF-F06CE4ED1A41}|Diary.Database\\Diary.Database.csproj|solutionrelative:diary.database\\entites\\addressentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF2FCAF-6717-453E-833B-C197810306AB}|Diary.ConsoleApp\\Diary.ConsoleApp.csproj|f:\\.suliscuccok\\c#\\ikt\\05 i guess\\kretas hazi\\diary.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF2FCAF-6717-453E-833B-C197810306AB}|Diary.ConsoleApp\\Diary.ConsoleApp.csproj|solutionrelative:diary.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SubjectEntity.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.Database\\Entites\\SubjectEntity.cs",
+              "RelativeDocumentMoniker": "Diary.Database\\Entites\\SubjectEntity.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.Database\\Entites\\SubjectEntity.cs",
+              "RelativeToolTip": "Diary.Database\\Entites\\SubjectEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T20:34:30.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentEntity.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.Database\\Entites\\StudentEntity.cs",
+              "RelativeDocumentMoniker": "Diary.Database\\Entites\\StudentEntity.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.Database\\Entites\\StudentEntity.cs",
+              "RelativeToolTip": "Diary.Database\\Entites\\StudentEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T19:49:26.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddressEntity.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.Database\\Entites\\AddressEntity.cs",
+              "RelativeDocumentMoniker": "Diary.Database\\Entites\\AddressEntity.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.Database\\Entites\\AddressEntity.cs",
+              "RelativeToolTip": "Diary.Database\\Entites\\AddressEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T19:41:47.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "Diary.ConsoleApp\\Program.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "Diary.ConsoleApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T19:26:10.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbFunctions.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.ConsoleApp\\DbFunctions.cs",
+              "RelativeDocumentMoniker": "Diary.ConsoleApp\\DbFunctions.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\05 i guess\\Kretas hazi\\Diary.ConsoleApp\\DbFunctions.cs",
+              "RelativeToolTip": "Diary.ConsoleApp\\DbFunctions.cs",
+              "ViewState": "AgIAAJMBAAAAAAAAAAAAAMQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T16:30:32.166Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

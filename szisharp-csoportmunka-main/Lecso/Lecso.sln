@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lecso.Database", "Lecso.Database\Lecso.Database.csproj", "{65922147-D8CA-463F-BB03-D3F5D420225F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lecso.ConsoleApp", "Lecso.ConsoleApp\Lecso.ConsoleApp.csproj", "{6BE28F23-65EE-41D9-8466-9134EF70C4A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65922147-D8CA-463F-BB03-D3F5D420225F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65922147-D8CA-463F-BB03-D3F5D420225F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65922147-D8CA-463F-BB03-D3F5D420225F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65922147-D8CA-463F-BB03-D3F5D420225F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE28F23-65EE-41D9-8466-9134EF70C4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE28F23-65EE-41D9-8466-9134EF70C4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE28F23-65EE-41D9-8466-9134EF70C4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE28F23-65EE-41D9-8466-9134EF70C4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E31584AE-266C-4858-B24E-6AE04BEEEB0D}
+	EndGlobalSection
+EndGlobal

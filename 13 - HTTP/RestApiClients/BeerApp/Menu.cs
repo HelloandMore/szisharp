@@ -41,6 +41,7 @@ public static class Menu
 		Console.Clear();
 		await Main();
 	}
+
 	public static async Task Start()
 	{
 		int id = ExtendedConsole.ReadInteger("\nAdd meg a sör azonosítóját > ");
@@ -112,7 +113,7 @@ public static class Menu
 
 		if (toBeDeleted == 'i' || toBeDeleted == 'I')
 		{
-			bool isSuccess = await BeerService.SendDeleteRequestAsync("api/beer/delete", AppState.GetBeerId());
+			bool isSuccess = await BeerService.DeleteAsync(AppState.GetBeerId());
 			Console.WriteLine($"\n{(isSuccess ? "Sikeres" : "Sikertelen")} volt a törlés");
 
 			await Task.Delay(3000);
@@ -146,7 +147,7 @@ public static class Menu
 		Beer updatedBeerData = GetUpdatedBeerData();
 		AppState.UpdateBeer(updatedBeerData);
 
-		await BeerService.SendPutRequestAsync("api/beer/update", AppState.GetBeer());
+		await BeerService.UpdateAsync(AppState.GetBeer());
 	}
 
 	private static Beer GetUpdatedBeerData()
@@ -180,7 +181,7 @@ public static class Menu
 
 		newBeer.Name = ExtendedConsole.ReadString("Sör neve > ");
 
-		string priceString = ExtendedConsole.ReadString("Sör ára > ");
+		string priceString = ExtendedConsole.ReadString("Sör ára > ").Replace(",",".");
 		double price = double.Parse(priceString, new CultureInfo("en-US"));
 		newBeer.Price = $"${Math.Abs(price)}";
 

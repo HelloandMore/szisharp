@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{80F33B75-21A2-4E02-9987-323921D5CB4F}|kretaconsole\\kretaconsole.csproj|f:\\.suliscuccok\\c#\\ikt\\04\\kreta copy\\kretaconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F33B75-21A2-4E02-9987-323921D5CB4F}|kretaconsole\\kretaconsole.csproj|solutionrelative:kretaconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F33B75-21A2-4E02-9987-323921D5CB4F}|kretaconsole\\kretaconsole.csproj|f:\\.suliscuccok\\c#\\ikt\\04\\kreta copy\\kretaconsole\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F33B75-21A2-4E02-9987-323921D5CB4F}|kretaconsole\\kretaconsole.csproj|solutionrelative:kretaconsole\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F33B75-21A2-4E02-9987-323921D5CB4F}|kretaconsole\\kretaconsole.csproj|f:\\.suliscuccok\\c#\\ikt\\04\\kreta copy\\kretaconsole\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F33B75-21A2-4E02-9987-323921D5CB4F}|kretaconsole\\kretaconsole.csproj|solutionrelative:kretaconsole\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80F33B75-21A2-4E02-9987-323921D5CB4F}|kretaconsole\\kretaconsole.csproj|f:\\.suliscuccok\\c#\\ikt\\04\\kreta copy\\kretaconsole\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80F33B75-21A2-4E02-9987-323921D5CB4F}|kretaconsole\\kretaconsole.csproj|solutionrelative:kretaconsole\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\kretaconsole\\Program.cs",
+              "RelativeDocumentMoniker": "kretaconsole\\Program.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\kretaconsole\\Program.cs",
+              "RelativeToolTip": "kretaconsole\\Program.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T14:05:31.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataManager.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\kretaconsole\\DataManager.cs",
+              "RelativeDocumentMoniker": "kretaconsole\\DataManager.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\kretaconsole\\DataManager.cs",
+              "RelativeToolTip": "kretaconsole\\DataManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T14:05:31.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\kretaconsole\\Class.cs",
+              "RelativeDocumentMoniker": "kretaconsole\\Class.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\kretaconsole\\Class.cs",
+              "RelativeToolTip": "kretaconsole\\Class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T14:05:31.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\kretaconsole\\Student.cs",
+              "RelativeDocumentMoniker": "kretaconsole\\Student.cs",
+              "ToolTip": "F:\\.suliscuccok\\C#\\ikt\\04\\Kreta copy\\kretaconsole\\Student.cs",
+              "RelativeToolTip": "kretaconsole\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T14:05:31.43Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

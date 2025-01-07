@@ -12,5 +12,14 @@ public class BeerService: BaseService
 		List<Beer> beers = await SendGetRequestAsync<List<Beer>>("api/beer/get-all");
 		return beers;
 	}
+    public static async Task<bool> DeleteAsync(int id)
+    {
+		bool result = await SendDeleteRequestAsync("api/beer/delete", id);
+		return result;
+	}
+    public static async Task UpdateAsync(Beer beer)
+    {
+		await SendPutRequestAsync("api/beer/update", beer);
+	}
 }
 

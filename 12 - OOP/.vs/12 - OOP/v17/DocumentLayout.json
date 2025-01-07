@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#\\12 - OOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{017D2592-5074-4350-AFBB-78E5C8938DC5}|01 - Constructor\\01 - Constructor.csproj|d:\\c#\\12 - oop\\01 - constructor\\fruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017D2592-5074-4350-AFBB-78E5C8938DC5}|01 - Constructor\\01 - Constructor.csproj|solutionrelative:01 - constructor\\fruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017D2592-5074-4350-AFBB-78E5C8938DC5}|01 - Constructor\\01 - Constructor.csproj|d:\\c#\\12 - oop\\01 - constructor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017D2592-5074-4350-AFBB-78E5C8938DC5}|01 - Constructor\\01 - Constructor.csproj|solutionrelative:01 - constructor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Fruit.cs",
+              "DocumentMoniker": "D:\\C#\\12 - OOP\\01 - Constructor\\Fruit.cs",
+              "RelativeDocumentMoniker": "01 - Constructor\\Fruit.cs",
+              "ToolTip": "D:\\C#\\12 - OOP\\01 - Constructor\\Fruit.cs",
+              "RelativeToolTip": "01 - Constructor\\Fruit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T07:04:11.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\C#\\12 - OOP\\01 - Constructor\\Program.cs",
+              "RelativeDocumentMoniker": "01 - Constructor\\Program.cs",
+              "ToolTip": "D:\\C#\\12 - OOP\\01 - Constructor\\Program.cs",
+              "RelativeToolTip": "01 - Constructor\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T07:03:31.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

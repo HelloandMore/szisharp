@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtletikaBajnoksag.Database", "AtletikaBajnoksag.Database\AtletikaBajnoksag.Database.csproj", "{34BA35AC-2C6D-4EE7-95E5-7C5E6EFDBF53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtletikaBajnoksag.ConsoleApp", "AtletikaBajnoksag.ConsoleApp\AtletikaBajnoksag.ConsoleApp.csproj", "{1AB2D992-55E2-47B9-8DEF-B535ED331053}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34BA35AC-2C6D-4EE7-95E5-7C5E6EFDBF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BA35AC-2C6D-4EE7-95E5-7C5E6EFDBF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BA35AC-2C6D-4EE7-95E5-7C5E6EFDBF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BA35AC-2C6D-4EE7-95E5-7C5E6EFDBF53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB2D992-55E2-47B9-8DEF-B535ED331053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB2D992-55E2-47B9-8DEF-B535ED331053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB2D992-55E2-47B9-8DEF-B535ED331053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB2D992-55E2-47B9-8DEF-B535ED331053}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24D2CD7C-B971-4CA3-92AD-7BAE9B05AC59}
+	EndGlobalSection
+EndGlobal

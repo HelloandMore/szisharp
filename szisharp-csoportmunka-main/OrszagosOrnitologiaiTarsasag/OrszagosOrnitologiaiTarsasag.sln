@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOT.Database", "OOT.database\OOT.Database.csproj", "{27971507-110D-4EE1-A689-7B13BA05695D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOT.ConsoleApp", "OOT.ConsoleApp\OOT.ConsoleApp.csproj", "{8A621C1D-64E4-44D6-86CB-5F15A10D2414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27971507-110D-4EE1-A689-7B13BA05695D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27971507-110D-4EE1-A689-7B13BA05695D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27971507-110D-4EE1-A689-7B13BA05695D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27971507-110D-4EE1-A689-7B13BA05695D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A621C1D-64E4-44D6-86CB-5F15A10D2414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A621C1D-64E4-44D6-86CB-5F15A10D2414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A621C1D-64E4-44D6-86CB-5F15A10D2414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A621C1D-64E4-44D6-86CB-5F15A10D2414}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7153DCE9-382F-4688-94ED-29C646447500}
+	EndGlobalSection
+EndGlobal
