@@ -1,11 +1,10 @@
-﻿using (var db = new ApplicationDbContext())
-{
-	db.Database.EnsureCreated();
-	await Diary.ConsoleApp.DbFunctions.InitAsync(db);
+﻿using var db = new ApplicationDbContext();
 
-	while (true)
-	{
-		Console.Clear();
-		await Diary.ConsoleApp.DbFunctions.DisplayMainMenuAsync(db);
-	}
+db.Database.EnsureCreated();
+await Diary.ConsoleApp.DbFunctions.InitAsync(db);
+
+while (true)
+{
+	Console.Clear();
+	await Diary.ConsoleApp.DbFunctions.DisplayMainMenuAsync(db);
 }

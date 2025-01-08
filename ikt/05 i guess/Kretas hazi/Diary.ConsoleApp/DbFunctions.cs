@@ -292,7 +292,7 @@ public class DbFunctions
 	public static async Task InitAsync(ApplicationDbContext context)
 	{
 		Console.Clear();
-		Console.WriteLine("=== Diákok osztályzatainak és tantárgyainak hozzárendelése ===");
+		Console.WriteLine("=== Adatok inicializálása ===");
 
 		var students = await context.Students.ToListAsync();
 		var grades = await context.Grades.ToListAsync();
@@ -314,7 +314,7 @@ public class DbFunctions
 		}
 
 		await context.SaveChangesAsync();
-		Console.WriteLine("Adatok sikeresen hozzárendelve a diákokhoz.");
+		Console.WriteLine("Adatok sikeresen inicializálva.");
 		Thread.Sleep(500);
 	}
 
@@ -409,7 +409,6 @@ public class DbFunctions
 			Thread.Sleep(2000);
 			Console.Clear();
 			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
-			Environment.Exit(0);
 		}
 	}
 
@@ -457,7 +456,6 @@ public class DbFunctions
 			Thread.Sleep(2000);
 			Console.Clear();
 			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
-			Environment.Exit(0);
 		}
 		foreach (var subject in subjects)
 		{
@@ -489,7 +487,6 @@ public class DbFunctions
 		{
 			Console.WriteLine("Nincs tantárgy hozzárendelve a diákhoz");
 			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
-			Environment.Exit(0);
 		}
 	}
 	public static async Task AssignAddressToStudentsAsync(ApplicationDbContext context)
