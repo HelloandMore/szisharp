@@ -62,11 +62,20 @@ public class DbFunctions
 		Console.WriteLine("=== Diák adatainak megjelenítése ===");
 		var students = await context.Students.OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
+
+		if (!students.Any())
+		{
+			Console.WriteLine("Nincsenek diákok az adatbázisban.");
+			Thread.Sleep(2000);
+			return;
+		}
+
 		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
 		var selectedStudent = await context.Students.FindAsync(studentId);
 		if (selectedStudent is null)
 		{
 			Console.WriteLine("Nem található diák ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 		DisplayStudentDetails(selectedStudent);
@@ -93,6 +102,19 @@ public class DbFunctions
 		};
 		student.AddressId = await CheckForExistingAddressAsync(context, newAddress);
 
+		var existingStudent = await context.Students
+			.FirstOrDefaultAsync(s => s.Name == student.Name &&
+									  s.MotherName == student.MotherName &&
+									  s.DateOfBirth == student.DateOfBirth &&
+									  s.AddressId == student.AddressId);
+
+		if (existingStudent != null)
+		{
+			Console.WriteLine("Már létezik diák ezekkel az adatokkal.");
+			Thread.Sleep(2000);
+			return;
+		}
+
 		await context.Students.AddAsync(student);
 		await context.SaveChangesAsync();
 	}
@@ -110,6 +132,7 @@ public class DbFunctions
 		if (selectedStudent is null)
 		{
 			Console.WriteLine("Nem található diák ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 
@@ -159,6 +182,15 @@ public class DbFunctions
 		Console.Clear();
 		Console.WriteLine("=== Új tantárgy felvétele ===");
 		string subjectName = ReadNonEmptyString("Tantárgy neve: ");
+
+		var existingSubject = await context.Subjects.FirstOrDefaultAsync(s => s.SubjectName == subjectName);
+		if (existingSubject != null)
+		{
+			Console.WriteLine("Már létezik tantárgy ezzel a névvel.");
+			Thread.Sleep(2000);
+			return;
+		}
+
 		var subject = new SubjectEntity
 		{
 			SubjectName = subjectName
@@ -173,26 +205,37 @@ public class DbFunctions
 		Console.WriteLine("=== Tantárgy hozzáadása diákhoz ===");
 		var students = await context.Set<StudentEntity>().OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
-		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
-		var selectedStudent = await context.Set<StudentEntity>().FindAsync(studentId);
-		if (selectedStudent is null)
+
+		if (!students.Any())
 		{
-			Console.WriteLine("Nem található diák ezzel az azonosítóval.");
+			Console.WriteLine("Nincsenek diákok az adatbázisban.");
+			Thread.Sleep(2000);
 			return;
 		}
+
+		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
+		var selectedStudent = await context.Set<StudentEntity>().FindAsync(studentId);
+
+		if (selectedStudent.Subjects != null && selectedStudent.Subjects.Any())
+		{
+			Console.WriteLine("A diák jelenlegi tantárgyai:");
+			DisplaySubjects(selectedStudent.Subjects);
+		}
+
 		var subjects = await context.Set<SubjectEntity>().OrderBy(x => x.SubjectName).ToListAsync();
+		Console.WriteLine();
 		DisplaySubjects(subjects);
 		var subjectId = ReadValidNumFromRange("Add meg a tantárgy azonosítóját: ", subjects.Min(s => s.Id), subjects.Max(s => s.Id));
 		var selectedSubject = await context.Set<SubjectEntity>().FindAsync(subjectId);
-		if (selectedSubject is null)
+
+		if (selectedStudent.Subjects.Any(s => s.Id == selectedSubject.Id))
 		{
-			Console.WriteLine("Nem található tantárgy ezzel az azonosítóval.");
+			Console.WriteLine("A tantárgy már hozzá van rendelve a diákhoz.");
+			Thread.Sleep(2000);
 			return;
 		}
-		if (selectedStudent.Subjects == null)
-		{
-			selectedStudent.Subjects = new List<SubjectEntity>();
-		}
+
+		selectedStudent.Subjects ??= new List<SubjectEntity>();
 		selectedStudent.Subjects.Add(selectedSubject);
 		await context.SaveChangesAsync();
 	}
@@ -208,6 +251,7 @@ public class DbFunctions
 		if (selectedStudent is null)
 		{
 			Console.WriteLine("Nem található diák ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 		DisplaySubjects(selectedStudent.Subjects);
@@ -216,6 +260,7 @@ public class DbFunctions
 		if (selectedSubject is null)
 		{
 			Console.WriteLine("Nem található tantárgy ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 		var grade = ReadValidNumFromRange("Osztályzat: ", 1, 5);
@@ -240,6 +285,7 @@ public class DbFunctions
 		if (selectedStudent is null)
 		{
 			Console.WriteLine("Nem található diák ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 		var grades = await context.Grades.Where(x => x.Student.EduId == studentId).ToListAsync();
@@ -249,6 +295,7 @@ public class DbFunctions
 		if (selectedGrade is null)
 		{
 			Console.WriteLine("Nem található osztályzat ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 		context.Grades.Remove(selectedGrade);
@@ -409,6 +456,7 @@ public class DbFunctions
 			Thread.Sleep(2000);
 			Console.Clear();
 			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
+			return;
 		}
 	}
 
@@ -449,13 +497,15 @@ public class DbFunctions
 
 	private static void DisplaySubjects(ICollection<SubjectEntity> subjects)
 	{
+
 		Console.WriteLine("Tantárgyak:");
 		if (subjects is null || !subjects.Any())
 		{
-			Console.WriteLine("Nincsenek tantárgyak az adatbázisban.");
+			Console.WriteLine("Nincsenek tantárgyak.");
 			Thread.Sleep(2000);
 			Console.Clear();
 			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
+			return;
 		}
 		foreach (var subject in subjects)
 		{
@@ -487,6 +537,7 @@ public class DbFunctions
 		{
 			Console.WriteLine("Nincs tantárgy hozzárendelve a diákhoz");
 			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
+			return;
 		}
 	}
 	public static async Task AssignAddressToStudentsAsync(ApplicationDbContext context)
@@ -500,6 +551,7 @@ public class DbFunctions
 		if (selectedStudent is null)
 		{
 			Console.WriteLine("Nem található diák ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 
@@ -510,6 +562,7 @@ public class DbFunctions
 		if (selectedAddress is null)
 		{
 			Console.WriteLine("Nem található lakcím ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 

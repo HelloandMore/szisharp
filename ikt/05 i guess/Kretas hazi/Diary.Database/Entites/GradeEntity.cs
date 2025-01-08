@@ -7,6 +7,7 @@ public class GradeEntity
 	[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 	public int Id { get; set; }
 
+	[Required]
 	public int SubjectId { get; set; }
 
 	[Required]
