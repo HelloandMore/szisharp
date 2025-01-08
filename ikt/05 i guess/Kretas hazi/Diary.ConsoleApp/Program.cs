@@ -1,7 +1,7 @@
 ﻿using (var db = new ApplicationDbContext())
 {
 	db.Database.EnsureCreated();
-	await Diary.ConsoleApp.DbFunctions.AssignAddressesToAllStudentsAsync(db);
+	await Diary.ConsoleApp.DbFunctions.InitAsync(db);
 
 	while (true)
 	{

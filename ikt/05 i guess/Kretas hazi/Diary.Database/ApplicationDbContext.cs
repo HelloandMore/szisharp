@@ -15,6 +15,6 @@ public class ApplicationDbContext : DbContext
 	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 	{
 		base.OnConfiguring(optionsBuilder);
-		optionsBuilder.UseSqlServer("Server=localhost;Database=Diary;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True;");
+		optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Diary;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True;");
 	}
 }

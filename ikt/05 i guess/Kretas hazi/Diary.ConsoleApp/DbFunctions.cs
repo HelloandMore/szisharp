@@ -4,7 +4,7 @@ namespace Diary.ConsoleApp;
 
 public class DbFunctions
 {
-	
+
 	public static async Task DisplayMainMenuAsync(ApplicationDbContext context)
 	{
 		Console.WriteLine("=== Napló alkalmazás ===");
@@ -62,7 +62,7 @@ public class DbFunctions
 		Console.WriteLine("=== Diák adatainak megjelenítése ===");
 		var students = await context.Students.OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
-		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", 1, students.Count);
+		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
 		var selectedStudent = await context.Students.FindAsync(studentId);
 		if (selectedStudent is null)
 		{
@@ -83,7 +83,7 @@ public class DbFunctions
 			MotherName = ReadNonEmptyString("Anyja neve: "),
 			DateOfBirth = ReadValidDateTime("Születési dátum"),
 		};
-		
+
 		var newAddress = new AddressEntity
 		{
 			Country = ReadNonEmptyString("Lakcím ország: "),
@@ -148,7 +148,7 @@ public class DbFunctions
 		Console.WriteLine("=== Diák törlése ===");
 		var students = await context.Students.OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
-		var studentId = ReadValidNumFromRange("Add meg a törlendő diák oktatási azonosítóját: ", 1, students.Count);
+		var studentId = ReadValidNumFromRange("Add meg a törlendő diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
 		var selectedStudent = await context.Students.FindAsync(studentId);
 		context.Students.Remove(selectedStudent);
 		await context.SaveChangesAsync();
@@ -173,7 +173,7 @@ public class DbFunctions
 		Console.WriteLine("=== Tantárgy hozzáadása diákhoz ===");
 		var students = await context.Set<StudentEntity>().OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
-		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", 1, students.Count);
+		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
 		var selectedStudent = await context.Set<StudentEntity>().FindAsync(studentId);
 		if (selectedStudent is null)
 		{
@@ -182,7 +182,7 @@ public class DbFunctions
 		}
 		var subjects = await context.Set<SubjectEntity>().OrderBy(x => x.SubjectName).ToListAsync();
 		DisplaySubjects(subjects);
-		var subjectId = ReadValidNumFromRange("Add meg a tantárgy azonosítóját: ", 1, subjects.Count);
+		var subjectId = ReadValidNumFromRange("Add meg a tantárgy azonosítóját: ", subjects.Min(s => s.Id), subjects.Max(s => s.Id));
 		var selectedSubject = await context.Set<SubjectEntity>().FindAsync(subjectId);
 		if (selectedSubject is null)
 		{
@@ -203,16 +203,15 @@ public class DbFunctions
 		Console.WriteLine("=== Új osztályzat rögzítése ===");
 		var students = await context.Students.OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
-		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", 1, students.Count);
+		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
 		var selectedStudent = await context.Students.FindAsync(studentId);
 		if (selectedStudent is null)
 		{
 			Console.WriteLine("Nem található diák ezzel az azonosítóval.");
 			return;
 		}
-		//var subjects = await context.Subjects.OrderBy(x => x.SubjectName).ToListAsync();
 		DisplaySubjects(selectedStudent.Subjects);
-		var subjectId = ReadValidNumFromRange("Add meg a tantárgy azonosítóját: ", 1, selectedStudent.Subjects.Count);
+		var subjectId = ReadValidNumFromRange("Add meg a tantárgy azonosítóját: ", selectedStudent.Subjects.Min(s => s.Id), selectedStudent.Subjects.Max(s => s.Id));
 		var selectedSubject = await context.Subjects.FindAsync(subjectId);
 		if (selectedSubject is null)
 		{
@@ -236,7 +235,7 @@ public class DbFunctions
 		Console.WriteLine("=== Osztályzat törlése diákról ===");
 		var students = await context.Students.OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
-		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", 1, students.Count);
+		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
 		var selectedStudent = await context.Students.FindAsync(studentId);
 		if (selectedStudent is null)
 		{
@@ -244,8 +243,8 @@ public class DbFunctions
 			return;
 		}
 		var grades = await context.Grades.Where(x => x.Student.EduId == studentId).ToListAsync();
-		DisplayGrades(grades);
-		var gradeId = ReadValidNumFromRange("Add meg az osztályzat azonosítóját: ", 1, grades.Count);
+		DisplayGrades(selectedStudent);
+		var gradeId = ReadValidNumFromRange("\nAdd meg az osztályzat azonosítóját: ", grades.Min(g => g.Id), grades.Max(g => g.Id));
 		var selectedGrade = await context.Grades.FindAsync(gradeId);
 		if (selectedGrade is null)
 		{
@@ -262,36 +261,51 @@ public class DbFunctions
 		Console.WriteLine("=== Tantárgy törlése diákról ===");
 		var students = await context.Students.OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
-		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", 1, students.Count);
+		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
 		var selectedStudent = await context.Students.FindAsync(studentId);
 		if (selectedStudent is null)
 		{
 			Console.WriteLine("Nem található diák ezzel az azonosítóval.");
+			Thread.Sleep(2000);
+			return;
+		}
+		if (selectedStudent.Subjects == null || !selectedStudent.Subjects.Any())
+		{
+			Console.WriteLine("A diáknak nincsenek tantárgyai.");
+			Thread.Sleep(2000);
 			return;
 		}
 		var subjects = await context.Subjects.OrderBy(x => x.SubjectName).ToListAsync();
 		DisplaySubjects(subjects);
-		var subjectId = ReadValidNumFromRange("Add meg a tantárgy azonosítóját: ", 1, subjects.Count);
+		var subjectId = ReadValidNumFromRange("Add meg a tantárgy azonosítóját: ", subjects.Min(s => s.Id), subjects.Max(s => s.Id));
 		var selectedSubject = await context.Subjects.FindAsync(subjectId);
 		if (selectedSubject is null)
 		{
 			Console.WriteLine("Nem található tantárgy ezzel az azonosítóval.");
+			Thread.Sleep(2000);
 			return;
 		}
 		selectedStudent.Subjects.Remove(selectedSubject);
 		await context.SaveChangesAsync();
 	}
 
-	public static async Task AssignAddressesToAllStudentsAsync(ApplicationDbContext context)
+	public static async Task InitAsync(ApplicationDbContext context)
 	{
 		Console.Clear();
-		Console.WriteLine("=== Diákok lakcímének hozzárendelése ===");
+		Console.WriteLine("=== Diákok osztályzatainak és tantárgyainak hozzárendelése ===");
 
 		var students = await context.Students.ToListAsync();
+		var grades = await context.Grades.ToListAsync();
+		var subjects = await context.Subjects.Include(s => s.Students).ToListAsync();
 		var addresses = await context.Addresses.ToListAsync();
 
 		foreach (var student in students)
 		{
+			student.Subjects = subjects
+				.Where(s => s.Students != null && s.Students.Any(st => st.EduId == student.EduId))
+				.ToList();
+			student.Grades = grades.Where(g => g.Student.EduId == student.EduId).ToList();
+			//student.Subjects = subjects.Where(s => s.Students.Any(st => st.EduId == student.EduId)).ToList();
 			var address = addresses.FirstOrDefault(a => a.Id == student.Address.Id);
 			if (address != null)
 			{
@@ -300,7 +314,7 @@ public class DbFunctions
 		}
 
 		await context.SaveChangesAsync();
-		Console.WriteLine("Lakcímek sikeresen hozzárendelve a diákokhoz.");
+		Console.WriteLine("Adatok sikeresen hozzárendelve a diákokhoz.");
 		Thread.Sleep(500);
 	}
 
@@ -395,6 +409,7 @@ public class DbFunctions
 			Thread.Sleep(2000);
 			Console.Clear();
 			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
+			Environment.Exit(0);
 		}
 	}
 
@@ -412,7 +427,7 @@ public class DbFunctions
 			{
 				Console.WriteLine();
 				Console.Write($"{subject.SubjectName}: ");
-				if (student.Grades != null && student.Grades.Any()) 
+				if (student.Grades != null && student.Grades.Any())
 				{
 					foreach (var grade in student.Grades)
 					{
@@ -436,18 +451,45 @@ public class DbFunctions
 	private static void DisplaySubjects(ICollection<SubjectEntity> subjects)
 	{
 		Console.WriteLine("Tantárgyak:");
+		if (subjects is null || !subjects.Any())
+		{
+			Console.WriteLine("Nincsenek tantárgyak az adatbázisban.");
+			Thread.Sleep(2000);
+			Console.Clear();
+			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
+			Environment.Exit(0);
+		}
 		foreach (var subject in subjects)
 		{
 			Console.WriteLine($"{subject.Id}. {subject.SubjectName}");
 		}
 	}
 
-	private static void DisplayGrades(List<GradeEntity> grades)
+	private static void DisplayGrades(StudentEntity student)
 	{
-		Console.WriteLine("Osztályzatok:");
-		foreach (var grade in grades)
+		if (student.Subjects != null && student.Subjects.Any())
 		{
-			Console.WriteLine($"{grade.Id}. {grade.Subject.SubjectName}: {grade.GradeValue}");
+			Console.WriteLine("Tantárgyak (azonosító) (jegy):");
+			foreach (var subject in student.Subjects)
+			{
+				Console.WriteLine($"{subject.SubjectName}: ");
+				if (student.Grades != null && student.Grades.Any())
+				{
+					foreach (var grade in student.Grades)
+					{
+						if (grade.Subject.Id == subject.Id)
+						{
+							Console.WriteLine($"\t({grade.Id}) {grade.GradeValue}");
+						}
+					}
+				}
+			}
+		}
+		else
+		{
+			Console.WriteLine("Nincs tantárgy hozzárendelve a diákhoz");
+			DisplayMainMenuAsync(new ApplicationDbContext()).Wait();
+			Environment.Exit(0);
 		}
 	}
 	public static async Task AssignAddressToStudentsAsync(ApplicationDbContext context)
@@ -456,7 +498,7 @@ public class DbFunctions
 		Console.WriteLine("=== Diákok lakcímének hozzárendelése ===");
 		var students = await context.Students.OrderBy(x => x.Name).ToListAsync();
 		DisplayStudents(students);
-		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", 1, students.Count);
+		var studentId = ReadValidNumFromRange("Add meg a diák oktatási azonosítóját: ", students.Min(s => s.EduId), students.Max(s => s.EduId));
 		var selectedStudent = await context.Students.FindAsync(studentId);
 		if (selectedStudent is null)
 		{
@@ -466,7 +508,7 @@ public class DbFunctions
 
 		var addresses = await context.Addresses.OrderBy(x => x.City).ToListAsync();
 		DisplayAddresses(addresses);
-		var addressId = ReadValidNumFromRange("Add meg a lakcím azonosítóját: ", 1, addresses.Count);
+		var addressId = ReadValidNumFromRange("Add meg a lakcím azonosítóját: ", addresses.Min(a => a.Id), addresses.Max(a => a.Id));
 		var selectedAddress = await context.Addresses.FindAsync(addressId);
 		if (selectedAddress is null)
 		{
@@ -481,7 +523,14 @@ public class DbFunctions
 
 	private static void DisplayAddresses(List<AddressEntity> addresses)
 	{
-		Console.WriteLine("Lakcímek:");
+		if (addresses.Count > 1)
+		{
+			Console.WriteLine("Lakcímek:");
+		}
+		else
+		{
+			Console.WriteLine("Lakcím:");
+		}
 		foreach (var address in addresses)
 		{
 			Console.WriteLine($"{address.Id}. {address.Country}, {address.City}, {address.Street} {address.HouseNumber}");
