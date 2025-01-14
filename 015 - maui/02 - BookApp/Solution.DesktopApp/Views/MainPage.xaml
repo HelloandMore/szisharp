@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:viewModel="clr-namespace:Solution.DesktopApp.ViewModels"
+             xmlns:behaviors="clr-namespace:Solution.DesktopApp.Behaviors"
+             xmlns:converters="clr-namespace:Solution.ValidationLibrary.Converters;assembly=Solution.ValidationLibrary"
+             x:DataType="viewModel:MainPageViewModel"
+             x:Class="Solution.DesktopApp.MainPage">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:FirstValidationErrorConverter x:Key="FirstValidationErrorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <FlexLayout Direction="Column"
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                Margin="50,0,50,0">
+        <Label Text="Könyv adatok" HorizontalOptions="Center"
+               Style="{x:StaticResource PageLabelStyle}"/>
+        <StackLayout>
+            <Label Text="ISBN azonosító" Style="{x:StaticResource InputLabelStyle}" />
+            <Entry Text="{Binding ISBN.Value}">
+                <Entry.Behaviors>
+                    <behaviors:EntryLongBehavior />
+                    <toolkit:EventToCommandBehavior EventName="TextChanged" Command="{Binding ISBNValidationCommand}" />
+                </Entry.Behaviors>
+            </Entry>
+            <Label Text="{Binding ISBN.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                   Style="{StaticResource ValidationErrorLabelStyle}" />
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Író(i)" Style="{x:StaticResource InputLabelStyle}"/>
+            <Entry Text="{Binding Author.Value}">
+                <Entry.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="TextChanged" Command="{Binding AuthorValidationCommand}" />
+                </Entry.Behaviors>
+            </Entry>
+            <Label Text="{Binding Author.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                   Style="{StaticResource ValidationErrorLabelStyle}" />
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Címe" Style="{x:StaticResource InputLabelStyle}"/>
+            <Entry Text="{Binding Title.Value}">
+                <Entry.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="TextChanged" Command="{Binding TitleValidationCommand}" />
+                </Entry.Behaviors>
+            </Entry>
+            <Label Text="{Binding Title.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                   Style="{StaticResource ValidationErrorLabelStyle}" />
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Kiadási év" Style="{x:StaticResource InputLabelStyle}"/>
+            <Entry Text="{Binding PublishYear.Value}">
+                <Entry.Behaviors>
+                    <behaviors:EntryIntegerBehavior />
+                    <toolkit:EventToCommandBehavior EventName="TextChanged" Command="{Binding PublishYearValidationCommand}" />
+                </Entry.Behaviors>
+            </Entry>
+            <Label Text="{Binding PublishYear.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                   Style="{StaticResource ValidationErrorLabelStyle}" />
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Kiadó" Style="{x:StaticResource InputLabelStyle}"/>
+            <Entry Text="{Binding Publisher.Value}">
+                <Entry.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="TextChanged" Command="{Binding PublisherValidationCommand}" />
+                </Entry.Behaviors>
+            </Entry>
+            <Label Text="{Binding Publisher.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
+                   Style="{StaticResource ValidationErrorLabelStyle}" />
+        </StackLayout>
+        <Button Text="Küldés" Command="{Binding OnSubmitCommand}" Style="{x:StaticResource ButtonStyle}"/>
+    </FlexLayout>
+
+</ContentPage>

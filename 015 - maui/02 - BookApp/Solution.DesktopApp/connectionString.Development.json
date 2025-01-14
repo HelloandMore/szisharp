@@ -1,0 +1,3 @@
+{
+  "SqlConnectionString": "Data Source=localhost;Database=BookDB;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True;"
+}

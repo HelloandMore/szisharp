@@ -1,0 +1,9 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using Solution.Core.Interfaces;
+global using ErrorOr;
+global using Solution.Core.Models;
+global using Solution.DataBase;
